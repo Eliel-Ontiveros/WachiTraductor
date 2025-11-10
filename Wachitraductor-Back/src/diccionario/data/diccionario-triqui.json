@@ -1,0 +1,2003 @@
+[
+    {
+        "id": 16,
+        "palabraEspanol": "uno",
+        "palabraTriqui": "'ro' yo'o",
+        "pronunciacion": "ro' yo'o",
+        "areaTematica": "numeros",
+        "definicion": "El primer número cardinal.",
+        "ejemploEspanol": "El sistema se basa en él, junto al número veinte.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "vigésimal",
+            "conteo"
+        ],
+        "notas": "Parte del sistema vigesimal.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 17,
+        "palabraEspanol": "dos",
+        "palabraTriqui": "vij",
+        "pronunciacion": "vij",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Dos veces veinte es cuarenta.",
+        "ejemploTriqui": "vij chihaa",
+        "traduccionEjemplo": "cuarenta (2x20)",
+        "palabrasRelacionadas": [],
+        "notas": "Se usa como base en las multiplicaciones por veinte.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 18,
+        "palabraEspanol": "tres",
+        "palabraTriqui": "va'nuj",
+        "pronunciacion": "va'nuj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Tres veces veinte es sesenta.",
+        "ejemploTriqui": "va'nuj chihaa",
+        "traduccionEjemplo": "sesenta (3x20)",
+        "palabrasRelacionadas": [],
+        "notas": "Parte del sistema vigesimal.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 19,
+        "palabraEspanol": "cuatro",
+        "palabraTriqui": "ca'anj",
+        "pronunciacion": "ca'anj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Cuatro veces veinte es ochenta.",
+        "ejemploTriqui": "ca'anj chihaa",
+        "traduccionEjemplo": "ochenta (4x20)",
+        "palabrasRelacionadas": [],
+        "notas": "Parte del sistema vigesimal.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 20,
+        "palabraEspanol": "cinco",
+        "palabraTriqui": "'un', 'u'un'",
+        "pronunciacion": "un', 'u'un'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Veinte más cinco es veinticinco.",
+        "ejemploTriqui": "ico 'un'",
+        "traduccionEjemplo": "veinticinco (20+5)",
+        "palabrasRelacionadas": [],
+        "notas": "Se utiliza para construir números mayores en la base diez (15) y base veinte (20+X).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "'un'",
+            "'u'un'"
+        ]
+    },
+    {
+        "id": 21,
+        "palabraEspanol": "seis",
+        "palabraTriqui": "vatan'",
+        "pronunciacion": "vatan'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Veinte más seis es veintiséis.",
+        "ejemploTriqui": "ico vatan'",
+        "traduccionEjemplo": "veintiséis (20+6)",
+        "palabrasRelacionadas": [],
+        "notas": "Parte del sistema de conteo vigesimal.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 22,
+        "palabraEspanol": "siete",
+        "palabraTriqui": "chij, ichij",
+        "pronunciacion": "chij, ichij",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Veinte más siete es veintisiete.",
+        "ejemploTriqui": "ico chij",
+        "traduccionEjemplo": "veintisiete (20+7)",
+        "palabrasRelacionadas": [],
+        "notas": "Parte del sistema de conteo vigesimal.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "chij",
+            "ichij"
+        ]
+    },
+    {
+        "id": 23,
+        "palabraEspanol": "ocho",
+        "palabraTriqui": "tunj, itunj",
+        "pronunciacion": "tunj, itunj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Veinte más ocho es veintiocho.",
+        "ejemploTriqui": "ico tunj",
+        "traduccionEjemplo": "veintiocho (20+8)",
+        "palabrasRelacionadas": [],
+        "notas": "Parte del sistema de conteo vigesimal.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "tunj",
+            "itunj"
+        ]
+    },
+    {
+        "id": 24,
+        "palabraEspanol": "nueve",
+        "palabraTriqui": "uun",
+        "pronunciacion": "uun",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Veinte más nueve es veintinueve.",
+        "ejemploTriqui": "ico uun",
+        "traduccionEjemplo": "veintinueve (20+9)",
+        "palabrasRelacionadas": [],
+        "notas": "Parte del sistema de conteo vigesimal.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 25,
+        "palabraEspanol": "diez",
+        "palabraTriqui": "chi', ichi'",
+        "pronunciacion": "chi', ichi'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal.",
+        "ejemploEspanol": "Veinte más diez es treinta.",
+        "ejemploTriqui": "ico chi'",
+        "traduccionEjemplo": "treinta (20+10)",
+        "palabrasRelacionadas": [],
+        "notas": "Se utiliza para componer números como el once (10+1) y el veinte más diez (30).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "chi'",
+            "ichi'"
+        ]
+    },
+    {
+        "id": 26,
+        "palabraEspanol": "once",
+        "palabraTriqui": "xaan, chihaan",
+        "pronunciacion": "xaan, chihaan",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'diez más uno'.",
+        "ejemploEspanol": "Treinta más once es cuarenta y uno, aunque se dice veinte más once.",
+        "ejemploTriqui": "ico xaan",
+        "traduccionEjemplo": "treinta y uno (20+11)",
+        "palabrasRelacionadas": [
+            "diez",
+            "uno"
+        ],
+        "notas": "Se construye como una suma de $10+1$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "xaan",
+            "chihaan"
+        ]
+    },
+    {
+        "id": 27,
+        "palabraEspanol": "doce",
+        "palabraTriqui": "chuvij",
+        "pronunciacion": "chuvij",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'diez más dos'.",
+        "ejemploEspanol": "Veinte más doce es treinta y dos.",
+        "ejemploTriqui": "ico chuvij",
+        "traduccionEjemplo": "treinta y dos (20+12)",
+        "palabrasRelacionadas": [
+            "diez",
+            "dos"
+        ],
+        "notas": "Se construye como una suma de $10+2$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 28,
+        "palabraEspanol": "trece",
+        "palabraTriqui": "cha'nuj",
+        "pronunciacion": "cha'nuj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'diez más tres'.",
+        "ejemploEspanol": "Veinte más trece es treinta y tres.",
+        "ejemploTriqui": "ico cha'nuj",
+        "traduccionEjemplo": "treinta y tres (20+13)",
+        "palabrasRelacionadas": [
+            "diez",
+            "tres"
+        ],
+        "notas": "Se construye como una suma de $10+3$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 29,
+        "palabraEspanol": "catorce",
+        "palabraTriqui": "xca'anj, chica'anj",
+        "pronunciacion": "xca'anj, chica'anj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'diez más cuatro'.",
+        "ejemploEspanol": "Veinte más catorce es treinta y cuatro.",
+        "ejemploTriqui": "ico xca'anj",
+        "traduccionEjemplo": "treinta y cuatro (20+14)",
+        "palabrasRelacionadas": [
+            "diez",
+            "cuatro"
+        ],
+        "notas": "Se construye como una suma de $10+4$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "xca'anj",
+            "chica'anj"
+        ]
+    },
+    {
+        "id": 30,
+        "palabraEspanol": "quince",
+        "palabraTriqui": "xnu', chinu'",
+        "pronunciacion": "xnu', chinu'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'diez más cinco'.",
+        "ejemploEspanol": "Dieciséis es 'quince más uno'.",
+        "ejemploTriqui": "xnu' yaan",
+        "traduccionEjemplo": "dieciséis (15+1)",
+        "palabrasRelacionadas": [
+            "diez",
+            "cinco"
+        ],
+        "notas": "Es un número clave para la sub-base $15$ ($10+5$).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "xnu'",
+            "chinu'"
+        ]
+    },
+    {
+        "id": 31,
+        "palabraEspanol": "dieciséis",
+        "palabraTriqui": "xnu' yaan",
+        "pronunciacion": "xnu' yaan",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'quince más uno'.",
+        "ejemploEspanol": "Veinte más dieciséis es treinta y seis.",
+        "ejemploTriqui": "ico xnu' yaan",
+        "traduccionEjemplo": "treinta y seis (20+15+1)",
+        "palabrasRelacionadas": [
+            "quince",
+            "uno"
+        ],
+        "notas": "Se construye con la sub-base $15$ ($15+1$).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 32,
+        "palabraEspanol": "diecisiete",
+        "palabraTriqui": "Xnulvij",
+        "pronunciacion": "Xnulvij",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'quince más dos'.",
+        "ejemploEspanol": "Veinte más diecisiete es treinta y siete.",
+        "ejemploTriqui": "ico xnu' vij",
+        "traduccionEjemplo": "treinta y siete (20+15+2)",
+        "palabrasRelacionadas": [
+            "quince",
+            "dos"
+        ],
+        "notas": "Se construye con la sub-base $15$ ($15+2$).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 33,
+        "palabraEspanol": "dieciocho",
+        "palabraTriqui": "xnu' va'nuj",
+        "pronunciacion": "xnu' va'nuj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'quince más tres'.",
+        "ejemploEspanol": "Veinte más dieciocho es treinta y ocho.",
+        "ejemploTriqui": "ico xnu' va'nuj",
+        "traduccionEjemplo": "treinta y ocho (20+15+3)",
+        "palabrasRelacionadas": [
+            "quince",
+            "tres"
+        ],
+        "notas": "Se construye con la sub-base $15$ ($15+3$).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 34,
+        "palabraEspanol": "diecinueve",
+        "palabraTriqui": "xnu' ca'anj",
+        "pronunciacion": "xnu' ca'anj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'quince más cuatro'.",
+        "ejemploEspanol": "Noventa y nueve es cuatro veces veinte más diecinueve.",
+        "ejemploTriqui": "ca'anj chihaa xnu' ca'anj",
+        "traduccionEjemplo": "noventa y nueve (4x20+15+4)",
+        "palabrasRelacionadas": [
+            "quince",
+            "cuatro"
+        ],
+        "notas": "Se construye con la sub-base $15$ ($15+4$).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 35,
+        "palabraEspanol": "veinte",
+        "palabraTriqui": "ico, co",
+        "pronunciacion": "ico, co",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. La base del sistema de numeración vigesimal.",
+        "ejemploEspanol": "Veintiuno es veinte más uno.",
+        "ejemploTriqui": "ico yaan",
+        "traduccionEjemplo": "veintiuno (20+1)",
+        "palabrasRelacionadas": [
+            "sistema vigesimal",
+            "conteo"
+        ],
+        "notas": "El sistema cardinal se forma a base de veinte (vigésimal).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "ico",
+            "co"
+        ]
+    },
+    {
+        "id": 36,
+        "palabraEspanol": "veintiuno",
+        "palabraTriqui": "ico yaan",
+        "pronunciacion": "ico yaan",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más uno'.",
+        "ejemploEspanol": "Se forma añadiendo uno a veinte.",
+        "ejemploTriqui": "ico yaan",
+        "traduccionEjemplo": "veintiuno (20+1)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "uno"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+1).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 37,
+        "palabraEspanol": "veintidós",
+        "palabraTriqui": "ico vij",
+        "pronunciacion": "ico vij",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más dos'.",
+        "ejemploEspanol": "Se forma añadiendo dos a veinte.",
+        "ejemploTriqui": "ico vij",
+        "traduccionEjemplo": "veintidós (20+2)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "dos"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+2).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 38,
+        "palabraEspanol": "veintitrés",
+        "palabraTriqui": "ico va'nuj",
+        "pronunciacion": "ico va'nuj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más tres'.",
+        "ejemploEspanol": "Se forma añadiendo tres a veinte.",
+        "ejemploTriqui": "ico va'nuj",
+        "traduccionEjemplo": "veintitrés (20+3)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "tres"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+3).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 39,
+        "palabraEspanol": "veinticuatro",
+        "palabraTriqui": "ico ca'anj",
+        "pronunciacion": "ico ca'anj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más cuatro'.",
+        "ejemploEspanol": "Se forma añadiendo cuatro a veinte.",
+        "ejemploTriqui": "ico ca'anj",
+        "traduccionEjemplo": "veinticuatro (20+4)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "cuatro"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+4).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 40,
+        "palabraEspanol": "veinticinco",
+        "palabraTriqui": "ico 'un'",
+        "pronunciacion": "ico 'un'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más cinco'.",
+        "ejemploEspanol": "Se forma añadiendo cinco a veinte.",
+        "ejemploTriqui": "ico 'un'",
+        "traduccionEjemplo": "veinticinco (20+5)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "cinco"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+5).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 41,
+        "palabraEspanol": "veintiséis",
+        "palabraTriqui": "ico vatan'",
+        "pronunciacion": "ico vatan'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más seis'.",
+        "ejemploEspanol": "Se forma añadiendo seis a veinte.",
+        "ejemploTriqui": "ico vatan'",
+        "traduccionEjemplo": "veintiséis (20+6)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "seis"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+6).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 42,
+        "palabraEspanol": "veintisiete",
+        "palabraTriqui": "ico chij",
+        "pronunciacion": "ico chij",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más siete'.",
+        "ejemploEspanol": "Se forma añadiendo siete a veinte.",
+        "ejemploTriqui": "ico chij",
+        "traduccionEjemplo": "veintisiete (20+7)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "siete"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+7).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 43,
+        "palabraEspanol": "veintiocho",
+        "palabraTriqui": "ico tunj",
+        "pronunciacion": "ico tunj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más ocho'.",
+        "ejemploEspanol": "Se forma añadiendo ocho a veinte.",
+        "ejemploTriqui": "ico tunj",
+        "traduccionEjemplo": "veintiocho (20+8)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "ocho"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+8).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 44,
+        "palabraEspanol": "veintinueve",
+        "palabraTriqui": "ico uun",
+        "pronunciacion": "ico uun",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más nueve'.",
+        "ejemploEspanol": "Se forma añadiendo nueve a veinte.",
+        "ejemploTriqui": "ico uun",
+        "traduccionEjemplo": "veintinueve (20+9)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "nueve"
+        ],
+        "notas": "Fiel a la estructura vigesimal (20+9).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 45,
+        "palabraEspanol": "treinta",
+        "palabraTriqui": "ico chi'",
+        "pronunciacion": "ico chi'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más diez'.",
+        "ejemploEspanol": "El número treinta se forma con veinte más diez.",
+        "ejemploTriqui": "ico chi'",
+        "traduccionEjemplo": "treinta (20+10)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "diez"
+        ],
+        "notas": "Se calcula sumando $20+10$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 46,
+        "palabraEspanol": "treinta y uno",
+        "palabraTriqui": "ico xaan",
+        "pronunciacion": "ico xaan",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más once'.",
+        "ejemploEspanol": "Se forma con veinte más el número once.",
+        "ejemploTriqui": "ico xaan",
+        "traduccionEjemplo": "treinta y uno (20+11)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "once"
+        ],
+        "notas": "Se calcula sumando $20+11$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 47,
+        "palabraEspanol": "treinta y dos",
+        "palabraTriqui": "ico chuvij",
+        "pronunciacion": "ico chuvij",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más doce'.",
+        "ejemploEspanol": "Se forma con veinte más el número doce.",
+        "ejemploTriqui": "ico chuvij",
+        "traduccionEjemplo": "treinta y dos (20+12)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "doce"
+        ],
+        "notas": "Se calcula sumando $20+12$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 48,
+        "palabraEspanol": "treinta y tres",
+        "palabraTriqui": "ico cha'nuj",
+        "pronunciacion": "ico cha'nuj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más trece'.",
+        "ejemploEspanol": "Se forma con veinte más el número trece.",
+        "ejemploTriqui": "ico cha'nuj",
+        "traduccionEjemplo": "treinta y tres (20+13)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "trece"
+        ],
+        "notas": "Se calcula sumando $20+13$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 49,
+        "palabraEspanol": "treinta y cuatro",
+        "palabraTriqui": "ico xca'anj",
+        "pronunciacion": "ico xca'anj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más catorce'.",
+        "ejemploEspanol": "Se forma con veinte más el número catorce.",
+        "ejemploTriqui": "ico xca'anj",
+        "traduccionEjemplo": "treinta y cuatro (20+14)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "catorce"
+        ],
+        "notas": "Se calcula sumando $20+14$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 50,
+        "palabraEspanol": "treinta y cinco",
+        "palabraTriqui": "ico xnu'",
+        "pronunciacion": "ico xnu'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más quince'.",
+        "ejemploEspanol": "Se forma con veinte más el número quince.",
+        "ejemploTriqui": "ico xnu'",
+        "traduccionEjemplo": "treinta y cinco (20+15)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "quince"
+        ],
+        "notas": "Se calcula sumando $20+15$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 51,
+        "palabraEspanol": "treinta y seis",
+        "palabraTriqui": "ico xnu' yaan",
+        "pronunciacion": "ico xnu' yaan",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más quince más uno'.",
+        "ejemploEspanol": "Se forma con veinte más dieciséis (15+1).",
+        "ejemploTriqui": "ico xnu' yaan",
+        "traduccionEjemplo": "treinta y seis (20+15+1)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "dieciséis"
+        ],
+        "notas": "Se calcula sumando $20+15+1$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 52,
+        "palabraEspanol": "treinta y siete",
+        "palabraTriqui": "ico xnu' vij",
+        "pronunciacion": "ico xnu' vij",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más quince más dos'.",
+        "ejemploEspanol": "Se forma con veinte más diecisiete (15+2).",
+        "ejemploTriqui": "ico xnu' vij",
+        "traduccionEjemplo": "treinta y siete (20+15+2)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "diecisiete"
+        ],
+        "notas": "Se calcula sumando $20+15+2$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 53,
+        "palabraEspanol": "treinta y ocho",
+        "palabraTriqui": "ico xnu' va'nuj",
+        "pronunciacion": "ico xnu' va'nuj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más quince más tres'.",
+        "ejemploEspanol": "Se forma con veinte más dieciocho (15+3).",
+        "ejemploTriqui": "ico xnu' va'nuj",
+        "traduccionEjemplo": "treinta y ocho (20+15+3)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "dieciocho"
+        ],
+        "notas": "Se calcula sumando $20+15+3$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 54,
+        "palabraEspanol": "treinta y nueve",
+        "palabraTriqui": "ico xnu' ca'anj",
+        "pronunciacion": "ico xnu' ca'anj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'veinte más quince más cuatro'.",
+        "ejemploEspanol": "Se forma con veinte más diecinueve (15+4).",
+        "ejemploTriqui": "ico xnu' ca'anj",
+        "traduccionEjemplo": "treinta y nueve (20+15+4)",
+        "palabrasRelacionadas": [
+            "veinte",
+            "diecinueve"
+        ],
+        "notas": "Se calcula sumando $20+15+4$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 55,
+        "palabraEspanol": "cuarenta",
+        "palabraTriqui": "vij chihaa",
+        "pronunciacion": "vij chihaa",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'dos veces veinte'.",
+        "ejemploEspanol": "Cuarenta y uno es 'dos veces veinte más uno'.",
+        "ejemploTriqui": "vij chihaa yaan",
+        "traduccionEjemplo": "cuarenta y uno (2x20+1)",
+        "palabrasRelacionadas": [
+            "dos",
+            "veinte"
+        ],
+        "notas": "Se calcula multiplicando $2\times20$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 56,
+        "palabraEspanol": "cuarenta y uno",
+        "palabraTriqui": "vij chihaa yaan",
+        "pronunciacion": "vij chihaa yaan",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'dos veces veinte más uno'.",
+        "ejemploEspanol": "Se calcula con 'cuarenta más uno'.",
+        "ejemploTriqui": "vij chihaa yaan",
+        "traduccionEjemplo": "cuarenta y uno (2x20+1)",
+        "palabrasRelacionadas": [
+            "cuarenta",
+            "uno"
+        ],
+        "notas": "Se calcula sumando $2\times20 + 1$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 57,
+        "palabraEspanol": "cincuenta",
+        "palabraTriqui": "vij chihaa chi'",
+        "pronunciacion": "vij chihaa chi'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'dos veces veinte más diez'.",
+        "ejemploEspanol": "Cincuenta y cinco es 'dos veces veinte más quince'.",
+        "ejemploTriqui": "vij chihaa xnu'",
+        "traduccionEjemplo": "cincuenta y cinco (2x20+15)",
+        "palabrasRelacionadas": [
+            "dos",
+            "veinte",
+            "diez"
+        ],
+        "notas": "Se calcula sumando $2\times20 + 10$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 58,
+        "palabraEspanol": "cincuenta y cinco",
+        "palabraTriqui": "vij chihaa xnu'",
+        "pronunciacion": "vij chihaa xnu'",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'dos veces veinte más quince'.",
+        "ejemploEspanol": "Se calcula con 'cincuenta más cinco'.",
+        "ejemploTriqui": "vij chihaa xnu'",
+        "traduccionEjemplo": "cincuenta y cinco (2x20+15)",
+        "palabrasRelacionadas": [
+            "cincuenta",
+            "quince"
+        ],
+        "notas": "Se calcula sumando $2\times20 + 15$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 59,
+        "palabraEspanol": "sesenta",
+        "palabraTriqui": "va'nuj chihaa",
+        "pronunciacion": "va'nuj chihaa",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'tres veces veinte'.",
+        "ejemploEspanol": "El número sesenta se basa en la multiplicación de tres por veinte.",
+        "ejemploTriqui": "va'nuj chihaa",
+        "traduccionEjemplo": "sesenta (3x20)",
+        "palabrasRelacionadas": [
+            "tres",
+            "veinte"
+        ],
+        "notas": "Se calcula multiplicando $3\times20$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 60,
+        "palabraEspanol": "ochenta",
+        "palabraTriqui": "ca'anj chihaa",
+        "pronunciacion": "ca'anj chihaa",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'cuatro veces veinte'.",
+        "ejemploEspanol": "El número ochenta se basa en la multiplicación de cuatro por veinte.",
+        "ejemploTriqui": "ca'anj chihaa",
+        "traduccionEjemplo": "ochenta (4x20)",
+        "palabrasRelacionadas": [
+            "cuatro",
+            "veinte"
+        ],
+        "notas": "Se calcula multiplicando $4\times20$.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 61,
+        "palabraEspanol": "noventa y nueve",
+        "palabraTriqui": "ca'anj chihaa xnu' ca'anj",
+        "pronunciacion": "ca'anj chihaa xnu' ca'anj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. El número más alto en el sistema vigesimal antiguo.",
+        "ejemploEspanol": "Se forma como 'cuatro veces veinte más diecinueve'.",
+        "ejemploTriqui": "ca'anj chihaa xnu' ca'anj",
+        "traduccionEjemplo": "noventa y nueve (4x20+15+4)",
+        "palabrasRelacionadas": [
+            "ochenta",
+            "diecinueve",
+            "límite"
+        ],
+        "notas": "El sistema de conteo antiguo llega solamente hasta noventa y nueve.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 62,
+        "palabraEspanol": "cien",
+        "palabraTriqui": "cientó",
+        "pronunciacion": "cientó",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Tomado del español (ciento).",
+        "ejemploEspanol": "Doscientos es 'dos veces cien'.",
+        "ejemploTriqui": "vij cientó",
+        "traduccionEjemplo": "doscientos (2x100)",
+        "palabrasRelacionadas": [
+            "centena",
+            "ciento"
+        ],
+        "notas": "Préstamo del español 'ciento'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 63,
+        "palabraEspanol": "doscientos",
+        "palabraTriqui": "vij cientó",
+        "pronunciacion": "vij cientó",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Se forma como 'dos veces cien'.",
+        "ejemploEspanol": "Se basa en la multiplicación de dos por cien.",
+        "ejemploTriqui": "vij cientó",
+        "traduccionEjemplo": "doscientos (2x100)",
+        "palabrasRelacionadas": [
+            "dos",
+            "cien"
+        ],
+        "notas": "Utiliza el término español 'cientó' como base de multiplicación.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 64,
+        "palabraEspanol": "mil",
+        "palabraTriqui": "míj",
+        "pronunciacion": "míj",
+        "areaTematica": "numeros",
+        "definicion": "Número cardinal. Tomado del español.",
+        "ejemploEspanol": "El número mil (mil).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "millar",
+            "mil"
+        ],
+        "notas": "Préstamo del español 'mil'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 65,
+        "palabraEspanol": "domingo",
+        "palabraTriqui": "cotungó, co'ngo",
+        "pronunciacion": "cotungó, co'ngo",
+        "areaTematica": "tiempo",
+        "definicion": "Día de la semana.",
+        "ejemploEspanol": "El nombre se compone de 'día' (güii) más la palabra domingo.",
+        "ejemploTriqui": "güii domingo",
+        "traduccionEjemplo": "día domingo",
+        "palabrasRelacionadas": [
+            "güii (día)"
+        ],
+        "notas": "Se compone de *güii* 'día' más la palabra *domingo*.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "cotungó",
+            "co'ngo"
+        ]
+    },
+    {
+        "id": 66,
+        "palabraEspanol": "lunes",
+        "palabraTriqui": "cu'ngo",
+        "pronunciacion": "cu'ngo",
+        "areaTematica": "tiempo",
+        "definicion": "Día de la semana.",
+        "ejemploEspanol": "Su origen es 'día uno', aunque se ha contraído.",
+        "ejemploTriqui": "güii yo'o",
+        "traduccionEjemplo": "día uno",
+        "palabrasRelacionadas": [
+            "güii (día)",
+            "uno"
+        ],
+        "notas": "Forma compuesta antigua de 'día' más el número 'uno'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 67,
+        "palabraEspanol": "martes",
+        "palabraTriqui": "cuvij",
+        "pronunciacion": "cuvij",
+        "areaTematica": "tiempo",
+        "definicion": "Día de la semana.",
+        "ejemploEspanol": "Su origen es 'día dos'.",
+        "ejemploTriqui": "güii vij",
+        "traduccionEjemplo": "día dos",
+        "palabrasRelacionadas": [
+            "güii (día)",
+            "dos"
+        ],
+        "notas": "Forma compuesta antigua de 'día' más el número 'dos'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 68,
+        "palabraEspanol": "miércoles",
+        "palabraTriqui": "cue'nuj",
+        "pronunciacion": "cue'nuj",
+        "areaTematica": "tiempo",
+        "definicion": "Día de la semana.",
+        "ejemploEspanol": "Su origen es 'día tres'.",
+        "ejemploTriqui": "güii va'nuj",
+        "traduccionEjemplo": "día tres",
+        "palabrasRelacionadas": [
+            "güii (día)",
+            "tres"
+        ],
+        "notas": "Forma compuesta antigua de 'día' más el número 'tres'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 69,
+        "palabraEspanol": "jueves",
+        "palabraTriqui": "cuica'anj",
+        "pronunciacion": "cuica'anj",
+        "areaTematica": "tiempo",
+        "definicion": "Día de la semana.",
+        "ejemploEspanol": "Su origen es 'día cuatro'.",
+        "ejemploTriqui": "güii ca'anj",
+        "traduccionEjemplo": "día cuatro",
+        "palabrasRelacionadas": [
+            "güii (día)",
+            "cuatro"
+        ],
+        "notas": "Forma compuesta antigua de 'día' más el número 'cuatro'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 70,
+        "palabraEspanol": "viernes",
+        "palabraTriqui": "cuyun'",
+        "pronunciacion": "cuyun'",
+        "areaTematica": "tiempo",
+        "definicion": "Día de la semana.",
+        "ejemploEspanol": "Su origen es 'día cinco'.",
+        "ejemploTriqui": "güii 'un'",
+        "traduccionEjemplo": "día cinco",
+        "palabrasRelacionadas": [
+            "güii (día)",
+            "cinco"
+        ],
+        "notas": "Forma compuesta antigua de 'día' más el número 'cinco'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 71,
+        "palabraEspanol": "sábado",
+        "palabraTriqui": "cuetan'",
+        "pronunciacion": "cuetan'",
+        "areaTematica": "tiempo",
+        "definicion": "Día de la semana.",
+        "ejemploEspanol": "Su origen es 'día seis'.",
+        "ejemploTriqui": "güii vatan'",
+        "traduccionEjemplo": "día seis",
+        "palabrasRelacionadas": [
+            "güii (día)",
+            "seis"
+        ],
+        "notas": "Forma compuesta antigua de 'día' más el número 'seis'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 72,
+        "palabraEspanol": "hermano de hombre",
+        "palabraTriqui": "tinúú",
+        "pronunciacion": "tinúú",
+        "areaTematica": "parentesco",
+        "definicion": "Hermano o primo, usado por un hombre.",
+        "ejemploEspanol": "Mi primo (dicho por un hombre).",
+        "ejemploTriqui": "tinúú tachruu",
+        "traduccionEjemplo": "primo de hombre",
+        "palabrasRelacionadas": [
+            "primo"
+        ],
+        "notas": "Se refiere a hermanos y primos de la misma generación, usado por un hombre.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "tinúú a'ngaa",
+            "tinúú tachruu"
+        ]
+    },
+    {
+        "id": 73,
+        "palabraEspanol": "hermana de mujer",
+        "palabraTriqui": "chu'vij",
+        "pronunciacion": "chu'vij",
+        "areaTematica": "parentesco",
+        "definicion": "Hermana o prima, usado por una mujer.",
+        "ejemploEspanol": "Mi hermana (dicho por una mujer).",
+        "ejemploTriqui": "chu'vij a'ngaa",
+        "traduccionEjemplo": "hermana de mujer [cite: 285",
+        "palabrasRelacionadas": [
+            "prima"
+        ],
+        "notas": "Se refiere a hermanas y primas de la misma generación, usado por una mujer[cite: 284, 285].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "chu'vij a'ngaa",
+            "chu'vij tachruu"
+        ]
+    },
+    {
+        "id": 74,
+        "palabraEspanol": "hermano/hermana (cruzado)",
+        "palabraTriqui": "ra'vij",
+        "pronunciacion": "ra'vij",
+        "areaTematica": "parentesco",
+        "definicion": "Hermano de mujer, primo de mujer; hermana de hombre, prima de hombre.",
+        "ejemploEspanol": "Mi hermano (dicho por una mujer) o mi hermana (dicho por un hombre).",
+        "ejemploTriqui": "ra'vij tachruu",
+        "traduccionEjemplo": "prima de hombre, primo de mujer [cite: 285",
+        "palabrasRelacionadas": [
+            "primo",
+            "prima"
+        ],
+        "notas": "Término cruzado.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "ra'vij a'ngaa",
+            "ra'vij tachruu"
+        ]
+    },
+    {
+        "id": 75,
+        "palabraEspanol": "padre",
+        "palabraTriqui": "rej",
+        "pronunciacion": "rej",
+        "areaTematica": "parentesco",
+        "definicion": "El progenitor masculino.",
+        "ejemploEspanol": "Los padres, padre y madre.",
+        "ejemploTriqui": "roj rej",
+        "traduccionEjemplo": "los padres, padre y madre [cite: 293",
+        "palabrasRelacionadas": [
+            "madre"
+        ],
+        "notas": "Forma base para 'padre'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 76,
+        "palabraEspanol": "madre",
+        "palabraTriqui": "nii",
+        "pronunciacion": "nii",
+        "areaTematica": "parentesco",
+        "definicion": "La progenitora femenina.",
+        "ejemploEspanol": "Los padres, padre y madre.",
+        "ejemploTriqui": "roj rej",
+        "traduccionEjemplo": "los padres, padre y madre [cite: 293",
+        "palabrasRelacionadas": [
+            "padre"
+        ],
+        "notas": "Forma base para 'madre'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 77,
+        "palabraEspanol": "tío",
+        "palabraTriqui": "ta'nu'",
+        "pronunciacion": "ta'nu'",
+        "areaTematica": "parentesco",
+        "definicion": "Hermano del padre o de la madre.",
+        "ejemploEspanol": "Mi tío.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "tía"
+        ],
+        "notas": "Término para tío.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 78,
+        "palabraEspanol": "tía",
+        "palabraTriqui": "tu've",
+        "pronunciacion": "tu've",
+        "areaTematica": "parentesco",
+        "definicion": "Hermana del padre o de la madre.",
+        "ejemploEspanol": "Mi tía.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "tío"
+        ],
+        "notas": "Término para tía.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 79,
+        "palabraEspanol": "abuelo",
+        "palabraTriqui": "xii",
+        "pronunciacion": "xii",
+        "areaTematica": "parentesco",
+        "definicion": "Padre del padre o de la madre.",
+        "ejemploEspanol": "Mis antepasados (lit. abuelos de antaño).",
+        "ejemploTriqui": "xí' naa",
+        "traduccionEjemplo": "antepasados (lit. abuelos de antaño) [cite: 314",
+        "palabrasRelacionadas": [
+            "abuela",
+            "bisabuelo"
+        ],
+        "notas": "Término para abuelo.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 80,
+        "palabraEspanol": "abuela",
+        "palabraTriqui": "xcua'anj",
+        "pronunciacion": "xcua'anj",
+        "areaTematica": "parentesco",
+        "definicion": "Madre del padre o de la madre.",
+        "ejemploEspanol": "Mi bisabuela.",
+        "ejemploTriqui": "xcua'án' veló",
+        "traduccionEjemplo": "bisabuela [cite: 298",
+        "palabrasRelacionadas": [
+            "abuelo",
+            "bisabuela"
+        ],
+        "notas": "Término para abuela.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 81,
+        "palabraEspanol": "bisabuelo",
+        "palabraTriqui": "xí' veló",
+        "pronunciacion": "xí' veló",
+        "areaTematica": "parentesco",
+        "definicion": "Padre del abuelo o de la abuela.",
+        "ejemploEspanol": "Mi bisabuelo.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "abuelo",
+            "bisabuela"
+        ],
+        "notas": "Término para bisabuelo.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 82,
+        "palabraEspanol": "hijo, hija",
+        "palabraTriqui": "ta'níí",
+        "pronunciacion": "ta'níí",
+        "areaTematica": "parentesco",
+        "definicion": "Descendiente directo (hijo o hija).",
+        "ejemploEspanol": "Hijo (masculino).",
+        "ejemploTriqui": "ta'nij sno'o",
+        "traduccionEjemplo": "hijo (lit. hijo masculino) [cite: 303, 311",
+        "palabrasRelacionadas": [
+            "hijo masculino",
+            "hija femenina"
+        ],
+        "notas": "Término general. *ta'nij sno'o* es hijo (masc.);]*ta'nij chana* es hija (fem.)[cite: 303, 311, 312].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "ta'nij sno'o",
+            "ta'nij chana"
+        ]
+    },
+    {
+        "id": 83,
+        "palabraEspanol": "sobrino",
+        "palabraTriqui": "xticun', xtucun'",
+        "pronunciacion": "xticun', xtucun'",
+        "areaTematica": "parentesco",
+        "definicion": "Hijo del hermano o hermana.",
+        "ejemploEspanol": "Mi sobrino.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "sobrina"
+        ],
+        "notas": "Término para sobrino.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "xticun'",
+            "xtucun'"
+        ]
+    },
+    {
+        "id": 84,
+        "palabraEspanol": "sobrina",
+        "palabraTriqui": "tacuachi', tucuachi'",
+        "pronunciacion": "tacuachi', tucuachi'",
+        "areaTematica": "parentesco",
+        "definicion": "Hija del hermano o hermana.",
+        "ejemploEspanol": "Mi sobrina.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "sobrino"
+        ],
+        "notas": "Término para sobrina.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "tacuachi'",
+            "tucuachi'"
+        ]
+    },
+    {
+        "id": 85,
+        "palabraEspanol": "nieto/nieta",
+        "palabraTriqui": "ta'nij si'no",
+        "pronunciacion": "ta'nij si'no",
+        "areaTematica": "parentesco",
+        "definicion": "Hijo/a de un hijo/a, o sobrino/a nieto/a.",
+        "ejemploEspanol": "Mi bisnieto (hijo del nieto).",
+        "ejemploTriqui": "ta'níí ta'nij si'no",
+        "traduccionEjemplo": "bisnieto (lit. hijo del nieto) [cite: 310",
+        "palabrasRelacionadas": [
+            "bisnieto",
+            "sobrino nieto"
+        ],
+        "notas": "También incluye sobrino/a nieto/a.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 86,
+        "palabraEspanol": "pariente, compañero",
+        "palabraTriqui": "tuvi'",
+        "pronunciacion": "tuvi'",
+        "areaTematica": "parentesco",
+        "definicion": "Persona con la que se tiene parentesco o es compañero.",
+        "ejemploEspanol": "Mi compañero.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "compañero"
+        ],
+        "notas": "Término general para pariente o compañero.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 87,
+        "palabraEspanol": "primogénito",
+        "palabraTriqui": "síí chava'",
+        "pronunciacion": "síí chava'",
+        "areaTematica": "parentesco",
+        "definicion": "El primer hijo o hija en nacer.",
+        "ejemploEspanol": "El primogénito (lit. persona primogénita).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "hermano",
+            "hijo"
+        ],
+        "notas": "Significa 'la persona primogénita'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 88,
+        "palabraEspanol": "hermano en medio",
+        "palabraTriqui": "síí tanuu",
+        "pronunciacion": "síí tanuu",
+        "areaTematica": "parentesco",
+        "definicion": "El hermano o hermana que ocupa un lugar intermedio en la familia.",
+        "ejemploEspanol": "El hermano en medio (lit. persona en medio).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "hermano",
+            "intermedio"
+        ],
+        "notas": "Significa 'la persona en medio'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 89,
+        "palabraEspanol": "benjamín",
+        "palabraTriqui": "chaton",
+        "pronunciacion": "chaton",
+        "areaTematica": "parentesco",
+        "definicion": "El hermano o hermana menor de todos.",
+        "ejemploEspanol": "El benjamín (el menor de todos).",
+        "ejemploTriqui": "síí chaton",
+        "traduccionEjemplo": "el hermano menor de todos (lit. persona benjamín) [cite: 314",
+        "palabrasRelacionadas": [
+            "menor"
+        ],
+        "notas": "También se usa *scue'ee* para el 'hermano menor que sigue directamente, el chipil'[cite: 316, 320].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "síí chaton",
+            "síí cunij"
+        ]
+    },
+    {
+        "id": 90,
+        "palabraEspanol": "esposo/esposa",
+        "palabraTriqui": "nica",
+        "pronunciacion": "nica",
+        "areaTematica": "parentesco",
+        "definicion": "Cónyuge (esposo o esposa).",
+        "ejemploEspanol": "La primera esposa.",
+        "ejemploTriqui": "nica yaan",
+        "traduccionEjemplo": "primera esposa (cp. yaan primero) [cite: 331, 332",
+        "palabrasRelacionadas": [
+            "cónyuge",
+            "matrimonio"
+        ],
+        "notas": "Término general para cónyuge.]*nica uún* es la segunda esposa.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "nica yaan",
+            "nica uún"
+        ]
+    },
+    {
+        "id": 91,
+        "palabraEspanol": "amante",
+        "palabraTriqui": "xra",
+        "pronunciacion": "xra",
+        "areaTematica": "parentesco",
+        "definicion": "Relación extramatrimonial.",
+        "ejemploEspanol": "Amante (lit. esposo amante)[cite: 336, 340].",
+        "ejemploTriqui": "nica xra'",
+        "traduccionEjemplo": "amante (lit. esposo amante) [cite: 336, 340",
+        "palabrasRelacionadas": [
+            "segunda esposa",
+            "relación"
+        ],
+        "notas": "También se usa *yo'ó chana* (lit. otra mujer) para 'la otra mujer (de mi esposo)'[cite: 337, 341].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "nica xra'",
+            "yo'ó chana"
+        ]
+    },
+    {
+        "id": 92,
+        "palabraEspanol": "esposo de pariente",
+        "palabraTriqui": "staj",
+        "pronunciacion": "staj",
+        "areaTematica": "parentesco",
+        "definicion": "Término afín para yernos, cuñados, concuños y tíos políticos[cite: 338, 342].",
+        "ejemploEspanol": "Mi yerno, mi cuñado, mi concuño.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "yerno",
+            "cuñado"
+        ],
+        "notas": "Se usa para yernos, cuñados, concuños y tíos políticos.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 93,
+        "palabraEspanol": "esposa de pariente",
+        "palabraTriqui": "choco'",
+        "pronunciacion": "choco'",
+        "areaTematica": "parentesco",
+        "definicion": "Término afín para nueras, cuñadas, concuñas y tías políticas[cite: 339, 343].",
+        "ejemploEspanol": "Mi nuera, mi cuñada, mi concuña.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "nuera",
+            "cuñada"
+        ],
+        "notas": "Se usa para nueras, cuñadas, concuñas y tías políticas.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 94,
+        "palabraEspanol": "suegro",
+        "palabraTriqui": "rej chej",
+        "pronunciacion": "rej chej",
+        "areaTematica": "parentesco",
+        "definicion": "Suegro, o pariente masculino mayor del esposo o de la esposa.",
+        "ejemploEspanol": "Mi suegro (cp. rej 'padre')[cite: 348, 352].",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "suegra",
+            "padre"
+        ],
+        "notas": "Derivado de *rej* 'padre'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 95,
+        "palabraEspanol": "suegra",
+        "palabraTriqui": "nii chej",
+        "pronunciacion": "nii chej",
+        "areaTematica": "parentesco",
+        "definicion": "Suegra, o pariente femenino mayor del esposo o de la esposa[cite: 349, 350].",
+        "ejemploEspanol": "Mi suegra (cp. nii 'madre')[cite: 350, 353].",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "suegro",
+            "madre"
+        ],
+        "notas": "Derivado de *nii* 'madre'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 96,
+        "palabraEspanol": "cuñado/cuñada (pariente menor)",
+        "palabraTriqui": "xéé",
+        "pronunciacion": "xéé",
+        "areaTematica": "parentesco",
+        "definicion": "Cuñado, cuñada, pariente menor del esposo o de la esposa.",
+        "ejemploEspanol": "Mi cuñado/a (pariente menor).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "pariente menor"
+        ],
+        "notas": "Término para pariente menor por afinidad.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 97,
+        "palabraEspanol": "consuegro de hombre",
+        "palabraTriqui": "báj",
+        "pronunciacion": "báj",
+        "areaTematica": "parentesco",
+        "definicion": "Consuegro de hombre.",
+        "ejemploEspanol": "Mi consuegro (del español 'compadre').",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "consuegra",
+            "compadre"
+        ],
+        "notas": "Préstamo del español 'compadre'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 98,
+        "palabraEspanol": "consuegra de mujer",
+        "palabraTriqui": "mané",
+        "pronunciacion": "mané",
+        "areaTematica": "parentesco",
+        "definicion": "Consuegra de mujer.",
+        "ejemploEspanol": "Mi consuegra (del español 'comadre').",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "consuegro",
+            "comadre"
+        ],
+        "notas": "Préstamo del español 'comadre'.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 99,
+        "palabraEspanol": "consuegra/o (cruzado)",
+        "palabraTriqui": "maré",
+        "pronunciacion": "maré",
+        "areaTematica": "parentesco",
+        "definicion": "Consuegra de hombre o consuegro de mujer[cite: 362, 364].",
+        "ejemploEspanol": "Mi consuegro/a (del español 'comadre/compadre').",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "compadre",
+            "comadre"
+        ],
+        "notas": "Se usa de forma cruzada, también en el compadrazgo.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 100,
+        "palabraEspanol": "concuños (hombres)",
+        "palabraTriqui": "tuvi' cataj",
+        "pronunciacion": "tuvi' cataj",
+        "areaTematica": "parentesco",
+        "definicion": "Hombres que se casaron con hermanas[cite: 367, 369].",
+        "ejemploEspanol": "Mi concuño (lit. compañero dirá).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "concuñas",
+            "compañero"
+        ],
+        "notas": "Se refiere a los hombres casados con hermanas.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 101,
+        "palabraEspanol": "concuñas (mujeres)",
+        "palabraTriqui": "tuvi' choco'",
+        "pronunciacion": "tuvi' choco'",
+        "areaTematica": "parentesco",
+        "definicion": "Mujeres que se casaron con hermanos.",
+        "ejemploEspanol": "Mi concuña (lit. compañera nuera).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "concuños",
+            "nuera"
+        ],
+        "notas": "Se refiere a las mujeres casadas con hermanos.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 102,
+        "palabraEspanol": "novio",
+        "palabraTriqui": "síí cataj",
+        "pronunciacion": "síí cataj",
+        "areaTematica": "parentesco",
+        "definicion": "El que está pidiendo la mano de una mujer.",
+        "ejemploEspanol": "El novio (lit. persona dijo).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "matrimonio",
+            "embajador"
+        ],
+        "notas": "Novio (el que está pidiendo a una mujer).",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 103,
+        "palabraEspanol": "embajador",
+        "palabraTriqui": "síí chéé chrej",
+        "pronunciacion": "síí chéé chrej",
+        "areaTematica": "parentesco",
+        "definicion": "El que pide a una mujer de parte de la familia del novio.",
+        "ejemploEspanol": "Embajador (lit. el que anda en el camino).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "novio",
+            "petición"
+        ],
+        "notas": "Cumple el rol de pedir la mano de la mujer en nombre de la familia del novio.",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 104,
+        "palabraEspanol": "enero",
+        "palabraTriqui": "yavii caya'anj",
+        "pronunciacion": "ya-vii ca-ya'anj",
+        "areaTematica": "tiempo",
+        "definicion": "Primer mes del año.",
+        "ejemploEspanol": "Mes que nació Dios (proviene de Nochebuena, el 24 de diciembre).",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. mes que nació Dios)",
+        "palabrasRelacionadas": [
+            "mes",
+            "Nochebuena"
+        ],
+        "notas": "El nombre está compuesto por *yavii* 'mes' y hace referencia a una fiesta de importancia. Hoy en día se usa más *yavii eneró*[cite: 198, 199, 201, 204].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "yavii eneró"
+        ]
+    },
+    {
+        "id": 105,
+        "palabraEspanol": "febrero",
+        "palabraTriqui": "yavii febreró",
+        "pronunciacion": "ya-vii fe-bre-ró",
+        "areaTematica": "tiempo",
+        "definicion": "Segundo mes del año.",
+        "ejemploEspanol": "El mes de febrero, tomado del español.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "mes"
+        ],
+        "notas": "Nombre tomado del español, compuesto por *yavii* 'mes'[cite: 198, 200, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 106,
+        "palabraEspanol": "marzo",
+        "palabraTriqui": "yavii marzó",
+        "pronunciacion": "ya-vii mar-zó",
+        "areaTematica": "tiempo",
+        "definicion": "Tercer mes del año.",
+        "ejemploEspanol": "El mes de marzo, tomado del español.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "mes"
+        ],
+        "notas": "Nombre tomado del español, compuesto por *yavii* 'mes'[cite: 198, 200, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 107,
+        "palabraEspanol": "abril",
+        "palabraTriqui": "yavii abrií",
+        "pronunciacion": "ya-vii a-brií",
+        "areaTematica": "tiempo",
+        "definicion": "Cuarto mes del año.",
+        "ejemploEspanol": "El mes de abril, tomado del español.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "mes"
+        ],
+        "notas": "Nombre tomado del español, compuesto por *yavii* 'mes'[cite: 198, 200, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 108,
+        "palabraEspanol": "mayo",
+        "palabraTriqui": "yavii mayó",
+        "pronunciacion": "ya-vii ma-yó",
+        "areaTematica": "tiempo",
+        "definicion": "Quinto mes del año.",
+        "ejemploEspanol": "El mes de mayo, tomado del español.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "mes"
+        ],
+        "notas": "Nombre tomado del español, compuesto por *yavii* 'mes'[cite: 198, 200, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 109,
+        "palabraEspanol": "junio",
+        "palabraTriqui": "yavii saguaá",
+        "pronunciacion": "ya-vii sa-guaá",
+        "areaTematica": "tiempo",
+        "definicion": "Sexto mes del año.",
+        "ejemploEspanol": "Mes de San Juan.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. mes de San Juan)",
+        "palabrasRelacionadas": [
+            "mes",
+            "San Juan"
+        ],
+        "notas": "El nombre está compuesto por *yavii* 'mes' y hace referencia a la fiesta de San Juan[cite: 198, 199, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 110,
+        "palabraEspanol": "julio",
+        "palabraTriqui": "yavii sndioó, yavii snioó",
+        "pronunciacion": "ya-vii sn-dioó, ya-vii snioó",
+        "areaTematica": "tiempo",
+        "definicion": "Séptimo mes del año.",
+        "ejemploEspanol": "Mes de Santiago.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. mes de Santiago)",
+        "palabrasRelacionadas": [
+            "mes",
+            "Santiago"
+        ],
+        "notas": "El nombre está compuesto por *yavii* 'mes' y hace referencia a la fiesta de Santiago[cite: 198, 199, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "yavii sndioó",
+            "yavii snioó"
+        ]
+    },
+    {
+        "id": 111,
+        "palabraEspanol": "agosto",
+        "palabraTriqui": "yavii xquí'",
+        "pronunciacion": "ya-vii x-quí'",
+        "areaTematica": "tiempo",
+        "definicion": "Octavo mes del año.",
+        "ejemploEspanol": "Mes del patrón.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. mes del patrón)",
+        "palabrasRelacionadas": [
+            "mes",
+            "patrón"
+        ],
+        "notas": "El nombre está compuesto por *yavii* 'mes' y hace referencia a la fiesta del patrón[cite: 198, 199, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 112,
+        "palabraEspanol": "septiembre",
+        "palabraTriqui": "yavii titá",
+        "pronunciacion": "ya-vii ti-tá",
+        "areaTematica": "tiempo",
+        "definicion": "Noveno mes del año.",
+        "ejemploEspanol": "Mes de Natividad.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. mes de Natividad)",
+        "palabrasRelacionadas": [
+            "mes",
+            "Natividad"
+        ],
+        "notas": "El nombre está compuesto por *yavii* 'mes' y hace referencia a la fiesta de Natividad[cite: 198, 199, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 113,
+        "palabraEspanol": "octubre",
+        "palabraTriqui": "yavii sarió, yavii rosarió",
+        "pronunciacion": "ya-vii sa-rió, ya-vii ro-sa-rió",
+        "areaTematica": "tiempo",
+        "definicion": "Décimo mes del año.",
+        "ejemploEspanol": "Mes del rosario.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. mes del rosario)",
+        "palabrasRelacionadas": [
+            "mes",
+            "rosario"
+        ],
+        "notas": "El nombre está compuesto por *yavii* 'mes' y hace referencia a la fiesta del rosario[cite: 198, 199, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": [
+            "yavii sarió",
+            "yavii rosarió"
+        ]
+    },
+    {
+        "id": 114,
+        "palabraEspanol": "noviembre",
+        "palabraTriqui": "yavii xnangá",
+        "pronunciacion": "ya-vii xnan-gá",
+        "areaTematica": "tiempo",
+        "definicion": "Undécimo mes del año.",
+        "ejemploEspanol": "Mes del muerto.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. mes del muerto)",
+        "palabrasRelacionadas": [
+            "mes",
+            "muerto"
+        ],
+        "notas": "El nombre está compuesto por *yavii* 'mes' y hace referencia al día de muertos[cite: 198, 199, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 115,
+        "palabraEspanol": "diciembre",
+        "palabraTriqui": "sandrese",
+        "pronunciacion": "san-dre-se",
+        "areaTematica": "tiempo",
+        "definicion": "Duodécimo mes del año.",
+        "ejemploEspanol": "Mes de San Andrés.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. mes de San Andrés)",
+        "palabrasRelacionadas": [
+            "mes",
+            "San Andrés"
+        ],
+        "notas": "El nombre hace referencia a la fiesta de San Andrés[cite: 198, 199, 201].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 116,
+        "palabraEspanol": "tiempo de secas",
+        "palabraTriqui": "dió nacoo",
+        "pronunciacion": "dió na-coo",
+        "areaTematica": "tiempo",
+        "definicion": "Temporada de sequía, de noviembre hasta abril o mayo.",
+        "ejemploEspanol": "Temporada seca.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. temporada seca)",
+        "palabrasRelacionadas": [
+            "sequía",
+            "calor"
+        ],
+        "notas": "Empieza con la palabra *dió* (tomada de 'tiempo' del español)[cite: 206, 207].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 117,
+        "palabraEspanol": "tiempo de calor",
+        "palabraTriqui": "dió maan",
+        "pronunciacion": "dió maan",
+        "areaTematica": "tiempo",
+        "definicion": "Temporada de calor, entre marzo, abril y mayo.",
+        "ejemploEspanol": "Temporada cuando hace calor.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. temporada cuando hace calor)",
+        "palabrasRelacionadas": [
+            "calor",
+            "secas"
+        ],
+        "notas": "Empieza con la palabra *dió* (tomada de 'tiempo' del español)[cite: 206, 207].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 118,
+        "palabraEspanol": "tiempo de aguas",
+        "palabraTriqui": "dió man'",
+        "pronunciacion": "dió man'",
+        "areaTematica": "tiempo",
+        "definicion": "Temporada de lluvias, de mayo o junio hasta octubre.",
+        "ejemploEspanol": "Temporada cuando llueve.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. temporada cuando llueve)",
+        "palabrasRelacionadas": [
+            "lluvia",
+            "siembra"
+        ],
+        "notas": "Empieza con la palabra *dió* (tomada de 'tiempo' del español)[cite: 206, 207].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 119,
+        "palabraEspanol": "temporada de aire",
+        "palabraTriqui": "dió avii nana",
+        "pronunciacion": "dió a-vii na-na",
+        "areaTematica": "tiempo",
+        "definicion": "Temporada de viento fuerte, en octubre y noviembre.",
+        "ejemploEspanol": "Temporada cuando corre viento.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. temporada cuando corre viento)",
+        "palabrasRelacionadas": [
+            "viento",
+            "frío"
+        ],
+        "notas": "Empieza con la palabra *dió* (tomada de 'tiempo' del español)[cite: 206, 207].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 120,
+        "palabraEspanol": "temporada de frío",
+        "palabraTriqui": "dió coj",
+        "pronunciacion": "dió coj",
+        "areaTematica": "tiempo",
+        "definicion": "Temporada fría, en diciembre, enero y febrero.",
+        "ejemploEspanol": "Temporada fría.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. temporada fría)",
+        "palabrasRelacionadas": [
+            "helada",
+            "invierno"
+        ],
+        "notas": "Empieza con la palabra *dió* (tomada de 'tiempo' del español)[cite: 206, 207].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 121,
+        "palabraEspanol": "temporada de helada",
+        "palabraTriqui": "dió ayuu yu've'",
+        "pronunciacion": "dió a-yuu yu've'",
+        "areaTematica": "tiempo",
+        "definicion": "Temporada cuando cae hielo, en diciembre, enero y febrero.",
+        "ejemploEspanol": "Temporada cuando cae hielo.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. temporada cuando cae hielo)",
+        "palabrasRelacionadas": [
+            "hielo",
+            "frío"
+        ],
+        "notas": "Empieza con la palabra *dió* (tomada de 'tiempo' del español)[cite: 206, 207].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 122,
+        "palabraEspanol": "días aciagos",
+        "palabraTriqui": "dió sayuun",
+        "pronunciacion": "dió sa-yuun",
+        "areaTematica": "tiempo",
+        "definicion": "Días de mala suerte al final del año (última parte de diciembre).",
+        "ejemploEspanol": "Temporada de problemas.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": "(lit. temporada de problemas)",
+        "palabrasRelacionadas": [
+            "problemas",
+            "fin de año"
+        ],
+        "notas": "Empieza con la palabra *dió* (tomada de 'tiempo' del español)[cite: 206, 207].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 123,
+        "palabraEspanol": "temporada de sembrar",
+        "palabraTriqui": "dió unô",
+        "pronunciacion": "dió u-nô",
+        "areaTematica": "tiempo",
+        "definicion": "Fase del ciclo agrícola: tiempo para sembrar (mayo y junio).",
+        "ejemploEspanol": "La siembra en los cerros altos no llega hasta enero.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "siembra",
+            "milpa"
+        ],
+        "notas": "Se refiere a la siembra de la milpa temporal[cite: 208, 210, 212].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 124,
+        "palabraEspanol": "temporada de limpiar",
+        "palabraTriqui": "dió anáj",
+        "pronunciacion": "dió a-nấj",
+        "areaTematica": "tiempo",
+        "definicion": "Fase del ciclo agrícola: tiempo de desyerbar (junio, julio y agosto).",
+        "ejemploEspanol": "Limpiar la milpa.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "desyerbar",
+            "milpa"
+        ],
+        "notas": "Se refiere a la limpia (desyerbe) de la milpa temporal[cite: 208, 213, 216].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    },
+    {
+        "id": 125,
+        "palabraEspanol": "temporada de pizcar",
+        "palabraTriqui": "dió rii",
+        "pronunciacion": "dió rii",
+        "areaTematica": "tiempo",
+        "definicion": "Fase del ciclo agrícola: tiempo de cosecha (octubre, noviembre y diciembre).",
+        "ejemploEspanol": "La cosecha de la milpa.",
+        "ejemploTriqui": null,
+        "traduccionEjemplo": null,
+        "palabrasRelacionadas": [
+            "cosecha",
+            "maíz"
+        ],
+        "notas": "Se refiere a la cosecha (pizca) de la milpa temporal[cite: 208, 214, 217].",
+        "fechaCreacion": "2025-11-10T00:00:00.000Z",
+        "variantesDialectales": []
+    }
+]

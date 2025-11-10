@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "titulo": "Historia del Pueblo Triqui",
+        "descripcion": "Los triquis son un pueblo indígena de México que habita principalmente en el estado de Oaxaca. Su nombre deriva de 'driqui' que significa 'padre grande' o 'padre superior'. En la tradición oral se dice que los triquis vinieron de Monte Albán, de donde fueron expulsados por desobedecer las órdenes del rey. Se establecieron en la región montañosa conocida como 'nudo mixteco', donde confluyen las sierras Madre Oriental y Occidental. Su territorio ha estado habitado desde tiempos prehispánicos, cuando estuvieron bajo el dominio mixteco de Tlachquiauhco.",
+        "tipo": "historia",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-historia.jpg",
+        "palabrasClave": [
+            "historia",
+            "Monte Albán",
+            "driqui",
+            "padre grande",
+            "Oaxaca",
+            "nudo mixteco"
+        ],
+        "region": "Oaxaca, México",
+        "fechaCreacion": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "id": 2,
+        "titulo": "Organización Social: Clanes y Sistema de Cargos",
+        "descripcion": "La organización social triqui se basa en un sistema de clanes donde coinciden los principios de territorialidad y descendencia. Cada población constituye un clan y la pertenencia a este determina los derechos al usufructo de la tierra y la residencia. El jefe del linaje distribuye las parcelas a los jefes de familia y media los conflictos entre vecinos por disputas de tierra. La familia extensa conforma la unidad tradicional, donde la mujer al casarse se muda a casa de los padres del esposo. Además, la sociedad se rige por un sistema de cargos cívico-religiosos y las asambleas generales de comuneros para la toma de decisiones.",
+        "tipo": "tradiciones",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-organizacion.jpg",
+        "palabrasClave": [
+            "organización social",
+            "clanes",
+            "territorialidad",
+            "jefe de linaje",
+            "familia extensa",
+            "sistema de cargos",
+            "asambleas"
+        ],
+        "region": "Comunidades Triquis",
+        "fechaCreacion": "2024-01-02T00:00:00.000Z"
+    },
+    {
+        "id": 3,
+        "titulo": "Festival de San Marcos - Dios de la Lluvia y Rituales",
+        "descripcion": "El 25 de abril se celebra una de las festividades más importantes: el día de San Marcos, conocido como el dios de la Lluvia. Durante esta celebración se realizan ceremonias especiales donde se extienden ofrendas en las cuevas: huevos, coñac y copal, acompañadas de grandes rituales ceremoniales, música y cantos en lengua triqui. Los niños colocan luces que iluminan el camino del Dios del Rayo, pidiendo agua para todos los cultivos y la vida. Muchos rituales se realizan en cuevas sagradas como la 'Wej Dukwá Duhwi' (Cueva Casa del Rayo), buscando el equilibrio con la naturaleza.",
+        "tipo": "festivales/religion",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-lluvia.jpg",
+        "palabrasClave": [
+            "San Marcos",
+            "dios de la lluvia",
+            "ceremonias",
+            "ofrendas",
+            "copal",
+            "ritual",
+            "Wej Dukwá Duhwi",
+            "cuevas sagradas"
+        ],
+        "region": "Territorio Triqui",
+        "fechaCreacion": "2024-01-03T00:00:00.000Z"
+    },
+    {
+        "id": 4,
+        "titulo": "Huipiles: Símbolo del Arte Textil y Cosmovisión",
+        "descripcion": "Los huipiles tejidos por las mujeres triquis son el símbolo más representativo del pueblo. Se elaboran en telar de cintura con hilo estambre o seda, con diseños coloridos en diferentes tonalidades de rojo. Son excesivamente largos y sueltos, cayendo en pliegues armoniosos desde los hombros hasta los tobillos. Están hechos de algodón blanco con rayas horizontales de 1 a 5 cm de ancho, entrelazadas con hilo rojo y púrpura. Su elaboración toma de 3 a 6 meses. El diseño simboliza la metamorfosis de la mariposa, donde el cuerpo central representa los rayos del sol y los lienzos laterales, sus alas.",
+        "tipo": "artesanias",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-huipiles.jpg",
+        "palabrasClave": [
+            "huipiles",
+            "telar de cintura",
+            "algodón",
+            "diseños",
+            "seda",
+            "textiles",
+            "metamorfosis de la mariposa",
+            "simbolismo"
+        ],
+        "region": "Talleres Comunitarios",
+        "fechaCreacion": "2024-01-04T00:00:00.000Z"
+    },
+    {
+        "id": 5,
+        "titulo": "Gastronomía Tradicional Triqui",
+        "descripcion": "La gastronomía triqui es muy variada y entre sus platillos principales están las enchiladas, chileatoles, barbacoa de venado y chilates de res especiales para el día de muertos. También consumen insectos como las 'chicatanas' (hormigas gigantes), gusanos, y una clase peculiar de avispas llamadas 'chango'. Incluye yerbas silvestres, hongos, camotes, quelites y frutas como capulines y moras. Para beber elaboran tepache al que agregan piloncillo y chile de árbol.",
+        "tipo": "gastronomia",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-gastronomia.jpg",
+        "palabrasClave": [
+            "enchiladas",
+            "chileatoles",
+            "barbacoa",
+            "chicatanas",
+            "tepache",
+            "quelites"
+        ],
+        "region": "Cocinas Tradicionales",
+        "fechaCreacion": "2024-01-05T00:00:00.000Z"
+    },
+    {
+        "id": 6,
+        "titulo": "Vestimenta Tradicional Distintiva",
+        "descripcion": "La vestimenta femenina se compone de huipil flojo y largo hasta el tobillo, sin unir bajo el brazo, de algodón blanco con rayas horizontales rojas y púrpuras. El pelo siempre recogido en una trenza o en 'tlacoyales' (tiras para el cabello). Los hombres usan pantalones de manta largos al tobillo de color blanco, camisas de colores claros adornadas con pequeños pliegues y botones de colores vivos, y sombrero de corte alto hecho con palma. En festividades, las mujeres ricas usan varios huipiles superpuestos, y los hombres portan sombrero de fieltro negro con copa alta.",
+        "tipo": "vestimenta",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-vestimenta.jpg",
+        "palabrasClave": [
+            "huipil",
+            "manta",
+            "trenza",
+            "sombrero de palma",
+            "algodón",
+            "rayas horizontales",
+            "tlacoyales"
+        ],
+        "region": "Comunidades Triquis",
+        "fechaCreacion": "2024-01-06T00:00:00.000Z"
+    },
+    {
+        "id": 7,
+        "titulo": "Música Tradicional con Instrumentos Ancestrales",
+        "descripcion": "La música tradicional triqui incluye guitarra, violín, tambor y algunas veces órgano de boca. La guitarra se toca con solo cinco cuerdas, acomodadas en diferente orden y con una afinación particular que le otorga un sonido distintivo. La mayoría de las canciones son instrumentales y cada una está asociada con algún cuento conocido por la comunidad. La música es interpretada por hombres en bodas, entierros, fiestas religiosas y convivios informales.",
+        "tipo": "musica",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-musica.jpg",
+        "palabrasClave": [
+            "guitarra",
+            "violín",
+            "tambor",
+            "cinco cuerdas",
+            "afinación particular",
+            "instrumentales"
+        ],
+        "region": "Celebraciones Comunitarias",
+        "fechaCreacion": "2024-01-07T00:00:00.000Z"
+    },
+    {
+        "id": 8,
+        "titulo": "Ubicación en el Nudo Mixteco",
+        "descripcion": "El pueblo triqui habita en el oeste y noroeste de Oaxaca, en un área de aproximadamente 500 kilómetros cuadrados. Su territorio se ubica en el 'nudo mixteco', en la confluencia de las sierras Madre Oriental y Occidental. Comprende dos regiones: la zona alta con cabecera en San Andrés Chicahuaxtla (clima templado, alturas hasta 2,500 metros) y la zona baja con cabecera en San Juan Copala (clima semitropical, alturas de 800 a 2,000 metros). Incluye los municipios de San Andrés Chicahuaxtla, Santo Domingo del Estado, San Martín Itunyoso, San José Xochixtlán y San Juan Copala.",
+        "tipo": "ubicacion",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-ubicacion.jpg",
+        "palabrasClave": [
+            "nudo mixteco",
+            "San Juan Copala",
+            "San Andrés Chicahuaxtla",
+            "sierras",
+            "500 km²"
+        ],
+        "region": "Oaxaca, México",
+        "fechaCreacion": "2024-01-08T00:00:00.000Z"
+    },
+    {
+        "id": 9,
+        "titulo": "Población y Demografía Actual",
+        "descripcion": "La población triqui está conformada por aproximadamente 25,883 habitantes distribuidos en diversas comunidades. Las mujeres mayores son principalmente monolingües (solo hablan triqui), mientras que los hombres y niños que han asistido a la escuela son bilingües (español y triqui). Mantienen una organización social basada en sistemas de cargos y asambleas generales de comuneros. La migración ha llevado a muchos triquis a trabajar en granjas de Sonora, Sinaloa, Baja California y otros estados, así como a cruzar la frontera hacia Estados Unidos. En algunas comunidades se mantiene la costumbre del matrimonio a temprana edad con el acuerdo de una dote.",
+        "tipo": "poblacion",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-poblacion.jpg",
+        "palabrasClave": [
+            "25,883 habitantes",
+            "bilingües",
+            "monolingües",
+            "migración",
+            "sistemas de cargos",
+            "matrimonio temprano",
+            "dote"
+        ],
+        "region": "Territorio Triqui",
+        "fechaCreacion": "2024-01-09T00:00:00.000Z"
+    },
+    {
+        "id": 10,
+        "titulo": "Lengua Triqui y sus Variantes",
+        "descripcion": "El triqui pertenece a la familia lingüística oto-mangue y cuenta con cuatro variantes principales: Xna'ánj nu' (hablado en San Juan Copala), Snáhánj nìh (San Martín Itunyoso), Nánj nình-in (San Andrés Chicahuaxtla), y Tnánj nình-in (Santo Domingo del Estado). La primera palabra significa 'lenguaje' y la segunda 'completa'. Entre ellos se llaman 'Tinujei' que significa 'hermano mío'. El triqui cuenta con aproximadamente 25,674 hablantes y es un idioma tonal con rica tradición oral.",
+        "tipo": "idioma",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-lengua.jpg",
+        "palabrasClave": [
+            "oto-mangue",
+            "cuatro variantes",
+            "tonal",
+            "Tinujei",
+            "25,674 hablantes"
+        ],
+        "region": "Comunidades de Habla Triqui",
+        "fechaCreacion": "2024-01-10T00:00:00.000Z"
+    },
+    {
+        "id": 11,
+        "titulo": "Creencias y Cosmovisión Ancestral",
+        "descripcion": "La religión triqui es un sincretismo entre el catolicismo y la religión tradicional, donde adoran a la naturaleza, a los astros y a los fenómenos astronómicos. Su cosmovisión incluye a los hermanos gemelos $ña'anj gui$ (el Sol) y $ña'anj ahui$ (la Luna). Creen en un espíritu maligno conocido como el Namaanj-an, que provoca síntomas similares a la parálisis del sueño. Adoran a un dios creador llamado Nexhequiriac y realizan rituales para mantener el equilibrio entre sociedad y naturaleza.",
+        "tipo": "religion",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-cosmovision.jpg",
+        "palabrasClave": [
+            "sincretismo",
+            "cosmovisión",
+            "Namaanj-an",
+            "Nexhequiriac",
+            "ña'anj gui",
+            "ña'anj ahui",
+            "Sol",
+            "Luna",
+            "naturaleza"
+        ],
+        "region": "Territorio Triqui",
+        "fechaCreacion": "2024-11-09T00:00:00.000Z"
+    },
+    {
+        "id": 12,
+        "titulo": "Otras Artesanías y Arte de Resistencia",
+        "descripcion": "Además de los huipiles, las mujeres triquis elaboran otras artesanías esenciales usando el telar de cintura, como blusas, bolsas, fajas y las tiras para el cabello llamadas tlacoyales. También practican la alfarería, y tejen cestos, tenates y petates con palma. Recientemente, el arte mural ha emergido como una forma de narrar su identidad cultural, ritos y creencias, y como plataforma de lucha y resistencia social.",
+        "tipo": "artesanias",
+        "imagen": "https://pueblosindigenas.es/wp-content/uploads/2016/09/triqui-alfareria.jpg",
+        "palabrasClave": [
+            "artesanias",
+            "alfarería",
+            "cestos",
+            "tenates",
+            "petates",
+            "arte mural",
+            "resistencia",
+            "tlacoyales"
+        ],
+        "region": "Talleres Comunitarios",
+        "fechaCreacion": "2024-11-09T00:00:00.000Z"
+    },
+    {
+        "id": 13,
+        "titulo": "Medicina Tradicional y Herbolaria",
+        "descripcion": "El pueblo triqui conserva un amplio conocimiento sobre la herbolaria y la medicina tradicional. Utilizan plantas medicinales para curar diversas afecciones, desde el 'mal de ojo' hasta dolencias físicas. Los curanderos (hombres y mujeres) emplean rituales de limpia, sobadas (masajes) y el uso de temazcales. La enfermedad a menudo se interpreta como un desequilibrio causado por fuerzas sobrenaturales o por el incumplimiento de las normas sociales.",
+        "tipo": "tradiciones",
+        "imagen": "https://etniasdelmundo.com/wp-content/uploads/triquis-medicina.jpg",
+        "palabrasClave": [
+            "medicina tradicional",
+            "herbolaria",
+            "curanderos",
+            "temazcal",
+            "mal de ojo",
+            "limpias",
+            "desequilibrio"
+        ],
+        "region": "Comunidades Triquis",
+        "fechaCreacion": "2024-11-10T00:00:00.000Z"
+    },
+    {
+        "id": 14,
+        "titulo": "Cultivos Principales y Economía Local",
+        "descripcion": "La base económica del pueblo triqui es la agricultura de subsistencia. Sus cultivos principales son el maíz, frijol y chile, siguiendo el sistema milpa, y en la zona baja también cultivan café. Los triquis son conocidos por la práctica de la agricultura en terrenos montañosos con el uso de la coa. También complementan su dieta y economía con la cría de ganado menor, aves de corral y la elaboración de sus artesanías para el comercio en mercados cercanos.",
+        "tipo": "economia",
+        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-milpa.jpg",
+        "palabrasClave": [
+            "agricultura",
+            "subsistencia",
+            "milpa",
+            "maíz",
+            "frijol",
+            "chile",
+            "café",
+            "coa",
+            "ganado menor"
+        ],
+        "region": "Territorio Triqui",
+        "fechaCreacion": "2024-11-10T00:00:00.000Z"
+    },
+    {
+        "id": 15,
+        "titulo": "Danza Tradicional: El Baile del Huipil",
+        "descripcion": "La danza es una parte integral de sus celebraciones. Una de las más significativas es el 'Baile del Huipil', donde las mujeres lucen sus huipiles largos y coloridos, girando para mostrar el movimiento y la belleza de la prenda. Estas danzas, acompañadas de música de violín y guitarra, se realizan en festividades patronales, bodas y ceremonias importantes, sirviendo como una expresión de identidad y orgullo cultural.",
+        "tipo": "festivales",
+        "imagen": "https://etniasdelmundo.com/wp-content/uploads/triquis-danza.jpg",
+        "palabrasClave": [
+            "danza tradicional",
+            "Baile del Huipil",
+            "huipiles",
+            "festividades",
+            "violín",
+            "guitarra",
+            "identidad cultural"
+        ],
+        "region": "Celebraciones Comunitarias",
+        "fechaCreacion": "2024-11-10T00:00:00.000Z"
+    }
+]
