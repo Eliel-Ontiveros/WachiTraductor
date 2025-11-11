@@ -4,7 +4,6 @@ import {
     FiltrarDiccionarioDto,
     RespuestaPaginadaDiccionario,
     CategoriaGramatical,
-    AreaTematica
 } from './dto/filtrar-diccionario.dto';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -44,7 +43,7 @@ export class DiccionarioService {
                 palabraTriqui: 'yaa',
                 pronunciacion: 'yaa',
                 categoria: CategoriaGramatical.SUSTANTIVO,
-                areaTematica: AreaTematica.NUMEROS,
+                areaTematica: 'numeros',
                 definicion: 'Líquido transparente, incoloro, inodoro e insípido que es esencial para la vida',
                 ejemploEspanol: 'El agua del río está muy fría',
                 ejemploTriqui: 'Yaa nij si ga\'a',
@@ -185,7 +184,12 @@ export class DiccionarioService {
     }
 
     async obtenerAreasTematicas(): Promise<string[]> {
-        return Object.values(AreaTematica);
+        // Derivar las áreas temáticas únicas a partir de las entradas cargadas
+        const areas = this.entradasDiccionario
+            .map(e => e.areaTematica)
+            .filter(Boolean) as string[];
+
+        return Array.from(new Set(areas));
     }
 
     async obtenerEstadisticas() {
@@ -196,8 +200,10 @@ export class DiccionarioService {
             return acc;
         }, {} as Record<string, number>);
 
-        const estadisticasPorArea = Object.values(AreaTematica).reduce((acc, area) => {
-            acc[area] = this.entradasDiccionario.filter(e => e.areaTematica === area).length;
+        // Contar dinámicamente por área temática
+        const estadisticasPorArea = this.entradasDiccionario.reduce((acc, entrada) => {
+            const area = entrada.areaTematica || 'sin-especificar';
+            acc[area] = (acc[area] || 0) + 1;
             return acc;
         }, {} as Record<string, number>);
 

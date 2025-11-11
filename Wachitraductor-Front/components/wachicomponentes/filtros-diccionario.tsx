@@ -4,19 +4,34 @@ import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-nati
 interface FiltrosDiccionarioProps {
     areaTematicaSeleccionada?: string;
     onAreaTematicaSeleccionada: (area?: string) => void;
+    // Lista dinámica de áreas temáticas provista por el padre (por ejemplo: ['numeros','parentesco'])
+    areasTematicas?: string[];
 }
 
-// Áreas temáticas que están actualmente en uso en el diccionario JSON
-const areasTematicas = [
-    { valor: 'numeros', nombre: 'Números' },
-    { valor: 'parentesco', nombre: 'Parentesco' },
-    { valor: 'tiempo', nombre: 'Tiempo' }
-];
+// Función utilitaria para convertir un identificador de área a un nombre legible
+const humanizarArea = (area: string) => {
+    if (!area) return '';
+    // Reemplazar guiones/guiones bajos por espacios y capitalizar cada palabra
+    return area
+        .replace(/[_-]+/g, ' ')
+        .split(' ')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+};
 
 const FiltrosDiccionario: React.FC<FiltrosDiccionarioProps> = ({
     areaTematicaSeleccionada,
     onAreaTematicaSeleccionada,
+    areasTematicas,
 }) => {
+    // Construir el array de áreas en forma { valor, nombre } usando el prop dinámico si existe
+    const opciones = (areasTematicas && areasTematicas.length > 0)
+        ? areasTematicas.map(a => ({ valor: a, nombre: humanizarArea(a) }))
+        : [
+            { valor: 'numeros', nombre: 'Números' },
+            { valor: 'parentesco', nombre: 'Parentesco' },
+            { valor: 'tiempo', nombre: 'Tiempo' }
+        ];
     return (
         <View style={styles.container}>
             <ScrollView
@@ -39,7 +54,7 @@ const FiltrosDiccionario: React.FC<FiltrosDiccionarioProps> = ({
                     </Text>
                 </TouchableOpacity>
 
-                {areasTematicas.map((area) => (
+                {opciones.map((area) => (
                     <TouchableOpacity
                         key={area.valor}
                         style={[

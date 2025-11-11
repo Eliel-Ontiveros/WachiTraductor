@@ -15,7 +15,7 @@ import {
     ApiParam,
 } from '@nestjs/swagger';
 import { DiccionarioService } from './diccionario.service';
-import { FiltrarDiccionarioDto, RespuestaPaginadaDiccionario, CategoriaGramatical, AreaTematica } from './dto/filtrar-diccionario.dto';
+import { FiltrarDiccionarioDto, RespuestaPaginadaDiccionario, CategoriaGramatical } from './dto/filtrar-diccionario.dto';
 import { EntradaDiccionario } from './entities/entrada-diccionario.entity';
 
 @ApiTags('diccionario')
@@ -48,8 +48,8 @@ export class DiccionarioController {
     @ApiQuery({
         name: 'areaTematica',
         required: false,
-        enum: AreaTematica,
-        description: 'Filtrar por área temática',
+        description: 'Filtrar por área temática (string). Las áreas disponibles son dinámicas según los datos',
+        example: 'numeros'
     })
     @ApiQuery({
         name: 'nivelDificultad',

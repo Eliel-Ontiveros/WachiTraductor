@@ -1,7 +1,7 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsOptional, IsString, IsEnum, IsNumber, Min, Max } from 'class-validator';
 import { Type } from 'class-transformer';
-import { CategoriaGramatical, AreaTematica } from '../entities/entrada-diccionario.entity';
+import { CategoriaGramatical } from '../entities/entrada-diccionario.entity';
 
 /**
  * DTO para filtrar y buscar entradas del diccionario
@@ -25,13 +25,12 @@ export class FiltrarDiccionarioDto {
     categoria?: CategoriaGramatical;
 
     @ApiPropertyOptional({
-        description: 'Filtrar por área temática',
-        enum: AreaTematica,
-        example: AreaTematica.NUMEROS
+        description: 'Filtrar por área temática (string). Las áreas son dinámicas y provienen de los datos',
+        example: 'numeros'
     })
     @IsOptional()
-    @IsEnum(AreaTematica)
-    areaTematica?: AreaTematica;
+    @IsString()
+    areaTematica?: string;
 
     @ApiPropertyOptional({
         description: 'Filtrar por nivel de dificultad (1: básico, 2: intermedio, 3: avanzado)',
@@ -126,4 +125,4 @@ export class RespuestaPaginadaDiccionario {
     filtrosAplicados: FiltrarDiccionarioDto;
 }
 
-export { CategoriaGramatical, AreaTematica };
+export { CategoriaGramatical };

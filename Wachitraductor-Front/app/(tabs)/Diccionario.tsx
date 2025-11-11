@@ -29,6 +29,7 @@ export default function DiccionarioScreen() {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [hasMoreResults, setHasMoreResults] = useState<boolean>(false);
   const [areaTematicaSeleccionada, setAreaTematicaSeleccionada] = useState<string | undefined>(undefined);
+  const [areasTematicasOpciones, setAreasTematicasOpciones] = useState<string[]>([]);
   const [filtrosActivos, setFiltrosActivos] = useState<FiltrosDiccionarioType>({
     idioma: 'ambos',
     ordenarPor: 'palabra-espanol',
@@ -45,10 +46,28 @@ export default function DiccionarioScreen() {
   const cargarDatosIniciales = useCallback(async () => {
     try {
       setLoading(true);
+      // Obtener entradas
       const response = await diccionarioService.obtenerEntradas(filtrosActivos);
+
+      // Intentar obtener áreas temáticas desde el endpoint dedicado; si falla, obtener todas las entradas y derivarlas
+      let areas: string[] = [];
+      try {
+        areas = await diccionarioService.obtenerAreasTematicas();
+      } catch (err) {
+        console.warn('No se pudo obtener áreas temáticas desde el endpoint; se intentará derivarlas de todas las entradas', err);
+        try {
+          const todas = await diccionarioService.obtenerTodasLasEntradas();
+          areas = Array.from(new Set(todas.map(e => e.areaTematica).filter(Boolean)));
+        } catch (err2) {
+          console.warn('No se pudieron derivar áreas temáticas desde todas las entradas', err2);
+          areas = [];
+        }
+      }
+
       setResults(response.entradas);
       setHasMoreResults(response.paginacion.hayPaginaSiguiente);
       setCurrentPage(1);
+      setAreasTematicasOpciones(areas || []);
     } catch (error) {
       console.error('Error al cargar datos iniciales:', error);
       Alert.alert('Error', 'No se pudieron cargar las entradas del diccionario');
@@ -295,6 +314,7 @@ export default function DiccionarioScreen() {
         <FiltrosDiccionario
           areaTematicaSeleccionada={areaTematicaSeleccionada}
           onAreaTematicaSeleccionada={aplicarFiltroAreaTematica}
+          areasTematicas={areasTematicasOpciones}
         />
 
         {/* Results area*/}

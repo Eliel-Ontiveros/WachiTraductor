@@ -58,10 +58,10 @@ export class EntradaDiccionario {
 
     @ApiProperty({
         description: 'Área temática a la que pertenece la palabra',
-        enum: AreaTematica,
-        example: AreaTematica.NUMEROS
+        example: 'numeros'
     })
-    areaTematica: AreaTematica;
+    // Se permite cualquier string para áreas temáticas para soportar valores dinámicos
+    areaTematica: string;
 
     @ApiProperty({
         description: 'Definición o significado de la palabra',
