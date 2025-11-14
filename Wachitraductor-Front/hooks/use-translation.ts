@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Alert } from 'react-native';
+import { Alert, Keyboard } from 'react-native';
 import { traduccionService } from '@/services/traduccion.service';
 import { TraduccionRequest } from '@/services/traduccion.types';
 
@@ -14,6 +14,9 @@ export function useTranslation() {
       Alert.alert('Sin texto', 'Escribe algo para traducir');
       return;
     }
+
+    // Cerrar el teclado antes de traducir
+    Keyboard.dismiss();
 
     setIsTranslating(true);
     setOutputText('Traduciendo...');
