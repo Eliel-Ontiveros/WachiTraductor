@@ -37,11 +37,6 @@ export function useTranslation() {
         textoCompleto += `\n\nAlternativas: ${resultado.alternativas.join(', ')}`;
       }
 
-      // Agregar nota de confianza
-      if (resultado.confianza < 100) {
-        textoCompleto += `\n\n(Confianza: ${resultado.confianza}%)`;
-      }
-
       setOutputText(textoCompleto);
     } catch (error) {
       console.error('Error en traducción:', error);
