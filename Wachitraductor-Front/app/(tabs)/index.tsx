@@ -1,7 +1,7 @@
 import { Image } from 'expo-image';
 import { Platform, StatusBar, StyleSheet, View, TouchableOpacity, Animated, Text, Alert } from 'react-native';
-import React, { useState, useRef, useEffect } from 'react';
-import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+import React, { useRef, useEffect } from 'react';
+import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { HelloWave } from '@/components/hello-wave';
 import { ThemedText } from '@/components/themed-text';
@@ -12,16 +12,24 @@ import LanguageToggle from '@/components/wachicomponentes/lenguaje';
 import TranslationCards from '@/components/wachicomponentes/translation-cards';
 import BottomNavBar from '@/components/wachicomponentes/bottom-nav';
 import { MaterialIcons } from '@expo/vector-icons';
-import { useTranslation, useVoiceRecording, useClipboard } from '@/hooks';
+import { useTranslation, useClipboard } from '@/hooks';
 
 export default function HomeScreen() {
-  const { inputText, outputText, isTranslating, setInputText, translate } = useTranslation();
-  const { isRecording, toggleRecording } = useVoiceRecording();
+  const {
+    inputText,
+    outputText,
+    isTranslating,
+    selectedLanguage,
+    setInputText,
+    setSelectedLanguage,
+    translate,
+    switchLanguages,
+    clearInputText
+  } = useTranslation();
   const { copyToClipboard } = useClipboard();
-  const [selectedLanguage, setSelectedLanguage] = useState<'left' | 'right'>('left'); 
-  
+
   const handleCopy = () => copyToClipboard(outputText);
-  
+
   const handleTabPress = (tab: 'diccionario' | 'home' | 'cultura') => {
     if (tab === 'diccionario') {
       router.push('/(tabs)/Diccionario');
@@ -35,23 +43,21 @@ export default function HomeScreen() {
       <SafeAreaView style={styles.container} edges={['left', 'right']}>
         <Wachiheather />
         {/* Selector de idiomas personalizado (componente) */}
-        <LanguageToggle 
+        <LanguageToggle
           activeLanguage={selectedLanguage}
           onChange={setSelectedLanguage}
         />
         {/* Traductor */}
-        <TranslationCards 
+        <TranslationCards
           leftTitle={selectedLanguage === 'left' ? 'Español' : 'Triqui'}
           rightTitle={selectedLanguage === 'left' ? 'Triqui' : 'Español'}
           leftText={inputText}
           rightText={outputText || 'Esperando.....'}
           onLeftTextChange={setInputText}
-          onMicPress={toggleRecording}
           onTranslatePress={translate}
           onCopyPress={handleCopy}
-          isRecording={isRecording}
+          onClearPress={clearInputText}
           isTranslating={isTranslating}
-          isMicDisabled={selectedLanguage === 'right'} 
         />
         <BottomNavBar activeTab="home" onTabPress={handleTabPress} />
       </SafeAreaView>

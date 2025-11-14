@@ -11,6 +11,12 @@ export const APP_CONFIG = {
     VERSION: process.env.EXPO_PUBLIC_VERSION || '1.0.0',
 };
 
+// Configuración de la API
+export const API_CONFIG = {
+    BASE_URL: APP_CONFIG.BACKEND_URL,
+    TIMEOUT: APP_CONFIG.REQUEST_TIMEOUT,
+};
+
 // URLs específicas de la API
 export const API_ENDPOINTS = {
     CULTURA: {

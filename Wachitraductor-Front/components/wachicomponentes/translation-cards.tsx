@@ -9,13 +9,10 @@ type Props = {
   leftText?: string;
   rightText?: string;
   onLeftTextChange?: (text: string) => void;
-  onMicPress?: () => void;
   onTranslatePress?: () => void;
   onCopyPress?: () => void;
-  onFavPress?: () => void;
-  isRecording?: boolean;
+  onClearPress?: () => void;
   isTranslating?: boolean;
-  isMicDisabled?: boolean;
 };
 
 export default function TranslationCards({
@@ -24,19 +21,19 @@ export default function TranslationCards({
   leftText = '',
   rightText = 'Esperando.....',
   onLeftTextChange,
-  onMicPress,
   onTranslatePress,
   onCopyPress,
-  isRecording = false,
+  onClearPress,
   isTranslating = false,
-  isMicDisabled = false,
 }: Props) {
   return (
     <View style={localStyles.cardsContainer}>
       <View style={localStyles.card}>
         <View style={localStyles.cardHeader}>
           <Text style={localStyles.cardTitle}>{leftTitle}</Text>
-          <MaterialIcons name="close" size={20} color="#333" />
+          <TouchableOpacity onPress={onClearPress} style={localStyles.clearButton}>
+            <MaterialIcons name="close" size={20} color="#666" />
+          </TouchableOpacity>
         </View>
         <View style={localStyles.cardBody}>
           <TextInput
@@ -50,28 +47,17 @@ export default function TranslationCards({
           />
         </View>
         <View style={localStyles.cardFooter}>
-          {/* Gradient only for mic button: gradient wrapper sized to button */}
-          <LinearGradient start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} locations={[0, 0.9]} colors={['#047492', '#012f3c']} style={isMicDisabled ? localStyles.micGradienteDisabled : localStyles.micGradiente}>
-            <TouchableOpacity
-              style={[localStyles.micButton, isRecording && localStyles.micButtonActive]}
-              onPress={isMicDisabled ? undefined : onMicPress}
-              disabled={isMicDisabled}
-              activeOpacity={0.8}
-            >
-              <MaterialIcons name={isRecording ? 'stop' : 'mic'} size={20} color={isMicDisabled ? '#666' : '#fff'} />
-            </TouchableOpacity>
-          </LinearGradient>
-            <TouchableOpacity 
-                style={[localStyles.translateButton, isTranslating && localStyles.translateButtonDisabled]} 
-                onPress={onTranslatePress}
-                disabled={isTranslating}
-            >
-                <LinearGradient start={{x: 0, y: 0}} end={{x: 1, y: 0}} locations={[0, 0.9]} colors={['#ff6600', '#bc4c01']} style={localStyles.gradiente}>
-                    <Text style={localStyles.translateButtonText}>
-                        {isTranslating ? 'Esperando...' : 'Traducir'}
-                    </Text>
-                </LinearGradient>
-            </TouchableOpacity>
+          <TouchableOpacity
+            style={[localStyles.translateButton, isTranslating && localStyles.translateButtonDisabled]}
+            onPress={onTranslatePress}
+            disabled={isTranslating}
+          >
+            <LinearGradient start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} locations={[0, 0.9]} colors={['#ff6600', '#bc4c01']} style={localStyles.gradiente}>
+              <Text style={localStyles.translateButtonText}>
+                {isTranslating ? 'Esperando...' : 'Traducir'}
+              </Text>
+            </LinearGradient>
+          </TouchableOpacity>
         </View>
       </View>
 
@@ -102,7 +88,7 @@ const localStyles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 18,
     borderRadius: 20,
-    },
+  },
   card: {
     backgroundColor: '#F5F5F5',
     borderRadius: 12,
@@ -148,40 +134,17 @@ const localStyles = StyleSheet.create({
   cardFooter: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
   },
-  micButton: {
-    // size handled by gradient wrapper; keep centering and optional overrides
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  micButtonActive: {
-    backgroundColor: '#FF5252',
-  },
-  micButtonDisabled: {
-    backgroundColor: '#CCCCCC',
-    opacity: 0.5,
+  clearButton: {
+    padding: 4,
+    borderRadius: 12,
+    backgroundColor: 'rgba(0,0,0,0.05)',
   },
   translateButton: {
     paddingVertical: 10,
     paddingHorizontal: 18,
     borderRadius: 20,
-  },
-  micGradiente: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  micGradienteDisabled: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#CCCCCC',
-    opacity: 0.6,
   },
   translateButtonDisabled: {
     opacity: 0.6,

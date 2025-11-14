@@ -11,10 +11,11 @@ import {
 } from 'react-native';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
+import { MaterialIcons } from '@expo/vector-icons';
 import Wachiheather from '@/components/wachicomponentes/heather';
 import BottomNavBar from '@/components/wachicomponentes/bottom-nav';
 import CulturaItem from '@/components/wachicomponentes/cultura-item';
-import FiltrosTipo from '@/components/wachicomponentes/filtros-tipo';
+import CulturaFiltrosModal from '@/components/wachicomponentes/cultura-filtros-modal';
 import { culturaService } from '@/services/cultura.service';
 import { InformacionCultural, ConfiguracionTipo } from '@/services/cultura.types';
 
@@ -26,6 +27,19 @@ export default function CulturaScreen() {
   const [busqueda, setBusqueda] = useState('');
   const [tipoFiltro, setTipoFiltro] = useState<string | undefined>();
   const [error, setError] = useState<string | null>(null);
+  const [modalFiltrosVisible, setModalFiltrosVisible] = useState<boolean>(false);
+
+  // Función utilitaria para humanizar el nombre del tipo
+  const humanizarTipo = (tipo: string) => {
+    if (!tipo) return '';
+    const tipoInfo = configuracionTipos?.[tipo];
+    if (tipoInfo?.nombre) return tipoInfo.nombre;
+
+    return tipo
+      .split('-')
+      .map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1))
+      .join(' ');
+  };
 
   // Cargar datos iniciales y configuración
   useEffect(() => {
@@ -60,6 +74,11 @@ export default function CulturaScreen() {
 
     return () => clearTimeout(timeoutId);
   }, [busqueda, tipoFiltro]);
+
+  const aplicarFiltroTipo = useCallback(async (tipo?: string) => {
+    setTipoFiltro(tipo);
+    // cargarDatos se ejecutará automáticamente por el useEffect
+  }, []);
 
   const cargarDatos = useCallback(async () => {
     setLoading(true);
@@ -134,13 +153,22 @@ export default function CulturaScreen() {
         )}
       </View>
 
-      {/* Filtros por tipo */}
-      <FiltrosTipo
-        tipos={tipos}
-        configuracionTipos={configuracionTipos}
-        tipoSeleccionado={tipoFiltro}
-        onTipoSeleccionado={setTipoFiltro}
-      />
+      {/* Botón de Filtros */}
+      <View style={styles.filterContainer}>
+        <TouchableOpacity
+          style={styles.filterButton}
+          onPress={() => setModalFiltrosVisible(true)}
+        >
+          <MaterialIcons name="filter-list" size={20} color="#007AFF" />
+          <Text style={styles.filterButtonText}>
+            {tipoFiltro ?
+              `Filtrado: ${humanizarTipo(tipoFiltro)}`
+              : 'Filtrar tipos'
+            }
+          </Text>
+          <MaterialIcons name="keyboard-arrow-down" size={20} color="#007AFF" />
+        </TouchableOpacity>
+      </View>
 
       {/* Indicador de resultados */}
       <View style={styles.resultadosHeader}>
@@ -158,7 +186,7 @@ export default function CulturaScreen() {
 
         {/* Header pill */}
         <View style={styles.headerPill}>
-          <Text style={styles.headerPillText}>Cultura Triqui</Text>
+          <Text style={styles.headerPillText}>WachiCultura</Text>
         </View>
 
         {/* Content area */}
@@ -204,6 +232,16 @@ export default function CulturaScreen() {
           )}
         </View>
 
+        {/* Modal de Filtros */}
+        <CulturaFiltrosModal
+          visible={modalFiltrosVisible}
+          onClose={() => setModalFiltrosVisible(false)}
+          tipoSeleccionado={tipoFiltro}
+          onTipoSeleccionado={aplicarFiltroTipo}
+          tipos={tipos}
+          configuracionTipos={configuracionTipos}
+        />
+
         <BottomNavBar activeTab="cultura" onTabPress={handleTabPress} />
       </SafeAreaView>
     </SafeAreaProvider>
@@ -220,7 +258,7 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     marginTop: 12,
     marginHorizontal: 16,
-    backgroundColor: '#007AFF',
+    backgroundColor: '#F5F5F5',
     paddingVertical: 12,
     flexDirection: 'row',
     borderRadius: 28,
@@ -234,10 +272,9 @@ const styles = StyleSheet.create({
   },
   headerPillText: {
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: '#000',
     textAlign: 'center',
     flex: 1,
-    fontSize: 16,
   },
   resultsWrapper: {
     flex: 1,
@@ -271,6 +308,31 @@ const styles = StyleSheet.create({
   clearButtonText: {
     fontSize: 16,
     color: '#999',
+    fontWeight: '600',
+  },
+  filterContainer: {
+    paddingHorizontal: 16,
+    marginBottom: 16,
+  },
+  filterButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 2,
+  },
+  filterButtonText: {
+    flex: 1,
+    marginLeft: 12,
+    fontSize: 16,
+    color: '#007AFF',
     fontWeight: '600',
   },
   resultadosHeader: {

@@ -16,7 +16,7 @@ import { router } from 'expo-router';
 import { MaterialIcons } from '@expo/vector-icons';
 import Wachiheather from '@/components/wachicomponentes/heather';
 import BottomNavBar from '@/components/wachicomponentes/bottom-nav';
-import FiltrosDiccionario from '@/components/wachicomponentes/filtros-diccionario';
+import FiltrosModal from '@/components/wachicomponentes/filtros-modal';
 import { diccionarioService } from '@/services/diccionario.service';
 import { EntradaDiccionario, FiltrosDiccionario as FiltrosDiccionarioType } from '@/services/diccionario.types';
 
@@ -30,6 +30,7 @@ export default function DiccionarioScreen() {
   const [hasMoreResults, setHasMoreResults] = useState<boolean>(false);
   const [areaTematicaSeleccionada, setAreaTematicaSeleccionada] = useState<string | undefined>(undefined);
   const [areasTematicasOpciones, setAreasTematicasOpciones] = useState<string[]>([]);
+  const [modalFiltrosVisible, setModalFiltrosVisible] = useState<boolean>(false);
   const [filtrosActivos, setFiltrosActivos] = useState<FiltrosDiccionarioType>({
     idioma: 'ambos',
     ordenarPor: 'palabra-espanol',
@@ -37,6 +38,28 @@ export default function DiccionarioScreen() {
     pagina: 1,
     limite: 20,
   });
+
+  // Función utilitaria para eliminar duplicados
+  const removeDuplicates = (entries: EntradaDiccionario[]): EntradaDiccionario[] => {
+    const seen = new Set<number>();
+    return entries.filter(entry => {
+      if (seen.has(entry.id)) {
+        return false;
+      }
+      seen.add(entry.id);
+      return true;
+    });
+  };
+
+  // Función para humanizar el nombre del área temática
+  const humanizarArea = (area: string) => {
+    if (!area) return '';
+    return area
+      .replace(/[_-]+/g, ' ')
+      .split(' ')
+      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+  };
 
   // Cargar datos iniciales al montar el componente
   useEffect(() => {
@@ -64,7 +87,7 @@ export default function DiccionarioScreen() {
         }
       }
 
-      setResults(response.entradas);
+      setResults(removeDuplicates(response.entradas));
       setHasMoreResults(response.paginacion.hayPaginaSiguiente);
       setCurrentPage(1);
       setAreasTematicasOpciones(areas || []);
@@ -88,7 +111,7 @@ export default function DiccionarioScreen() {
       Keyboard.dismiss();
 
       const entradas = await diccionarioService.busquedaSimple(query.trim());
-      setResults(entradas);
+      setResults(removeDuplicates(entradas));
       setCurrentPage(1);
       setHasMoreResults(false); // Para búsqueda simple, no hay paginación
     } catch (error) {
@@ -127,7 +150,14 @@ export default function DiccionarioScreen() {
       };
 
       const response = await diccionarioService.obtenerEntradas(filtros);
-      setResults(prev => [...prev, ...response.entradas]);
+
+      // Filtrar duplicados basándose en el ID
+      setResults(prev => {
+        const existingIds = new Set(prev.map(item => item.id));
+        const newEntries = response.entradas.filter(entry => !existingIds.has(entry.id));
+        return [...prev, ...newEntries];
+      });
+
       setHasMoreResults(response.paginacion.hayPaginaSiguiente);
       setCurrentPage(nextPage);
     } catch (error) {
@@ -154,7 +184,7 @@ export default function DiccionarioScreen() {
       };
 
       const response = await diccionarioService.obtenerEntradas(filtros);
-      setResults(response.entradas);
+      setResults(removeDuplicates(response.entradas));
       setHasMoreResults(response.paginacion.hayPaginaSiguiente);
       setFiltrosActivos(filtros);
     } catch (error) {
@@ -177,7 +207,7 @@ export default function DiccionarioScreen() {
         pagina: 1,
       });
 
-      setResults(response.entradas);
+      setResults(removeDuplicates(response.entradas));
       setHasMoreResults(response.paginacion.hayPaginaSiguiente);
     } catch (error) {
       console.error('Error al aplicar filtros:', error);
@@ -310,8 +340,27 @@ export default function DiccionarioScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Filtros */}
-        <FiltrosDiccionario
+        {/* Botón de Filtros */}
+        <View style={styles.filterContainer}>
+          <TouchableOpacity
+            style={styles.filterButton}
+            onPress={() => setModalFiltrosVisible(true)}
+          >
+            <MaterialIcons name="filter-list" size={20} color="#047492" />
+            <Text style={styles.filterButtonText}>
+              {areaTematicaSeleccionada ?
+                `Filtrado: ${humanizarArea(areaTematicaSeleccionada)}`
+                : 'Filtrar categorías'
+              }
+            </Text>
+            <MaterialIcons name="keyboard-arrow-down" size={20} color="#047492" />
+          </TouchableOpacity>
+        </View>
+
+        {/* Modal de Filtros */}
+        <FiltrosModal
+          visible={modalFiltrosVisible}
+          onClose={() => setModalFiltrosVisible(false)}
           areaTematicaSeleccionada={areaTematicaSeleccionada}
           onAreaTematicaSeleccionada={aplicarFiltroAreaTematica}
           areasTematicas={areasTematicasOpciones}
@@ -321,7 +370,7 @@ export default function DiccionarioScreen() {
         <View style={styles.resultsWrapper}>
           <FlatList
             data={results}
-            keyExtractor={(item) => item.id.toString()}
+            keyExtractor={(item, index) => `diccionario-${item.id}-${index}`}
             renderItem={renderItem}
             ListEmptyComponent={renderEmptyComponent}
             ListFooterComponent={renderFooter}
@@ -526,5 +575,32 @@ const styles = StyleSheet.create({
     marginTop: 8,
     color: '#666',
     fontSize: 14,
+  },
+  filterContainer: {
+    marginHorizontal: 16,
+    marginTop: 12,
+    marginBottom: 8,
+  },
+  filterButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F8F9FA',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  filterButtonText: {
+    flex: 1,
+    marginLeft: 8,
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#047492',
   },
 });
