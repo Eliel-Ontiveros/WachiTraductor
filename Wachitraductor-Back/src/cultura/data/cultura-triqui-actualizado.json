@@ -38,7 +38,7 @@
         "id": 3,
         "titulo": "Festival de San Marcos - Dios de la Lluvia y Rituales",
         "descripcion": "El 25 de abril se celebra una de las festividades más importantes: el día de San Marcos, conocido como el dios de la Lluvia. Durante esta celebración se realizan ceremonias especiales donde se extienden ofrendas en las cuevas: huevos, coñac y copal, acompañadas de grandes rituales ceremoniales, música y cantos en lengua triqui. Los niños colocan luces que iluminan el camino del Dios del Rayo, pidiendo agua para todos los cultivos y la vida. Muchos rituales se realizan en cuevas sagradas como la 'Wej Dukwá Duhwi' (Cueva Casa del Rayo), buscando el equilibrio con la naturaleza.",
-        "tipo": "festivales/religion",
+        "tipo": "religion",
         "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-lluvia.jpg",
         "palabrasClave": [
             "San Marcos",
@@ -229,26 +229,6 @@
             "desequilibrio"
         ],
         "region": "Comunidades Triquis",
-        "fechaCreacion": "2024-11-10T00:00:00.000Z"
-    },
-    {
-        "id": 14,
-        "titulo": "Cultivos Principales y Economía Local",
-        "descripcion": "La base económica del pueblo triqui es la agricultura de subsistencia. Sus cultivos principales son el maíz, frijol y chile, siguiendo el sistema milpa, y en la zona baja también cultivan café. Los triquis son conocidos por la práctica de la agricultura en terrenos montañosos con el uso de la coa. También complementan su dieta y economía con la cría de ganado menor, aves de corral y la elaboración de sus artesanías para el comercio en mercados cercanos.",
-        "tipo": "economia",
-        "imagen": "https://atlas.inpi.gob.mx/wp-content/uploads/triqui-milpa.jpg",
-        "palabrasClave": [
-            "agricultura",
-            "subsistencia",
-            "milpa",
-            "maíz",
-            "frijol",
-            "chile",
-            "café",
-            "coa",
-            "ganado menor"
-        ],
-        "region": "Territorio Triqui",
         "fechaCreacion": "2024-11-10T00:00:00.000Z"
     },
     {

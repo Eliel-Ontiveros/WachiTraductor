@@ -12,6 +12,7 @@ export enum TipoInformacion {
     UBICACION = 'ubicacion',
     POBLACION = 'poblacion',
     IDIOMA = 'idioma',
+    RELIGION = 'religion',
 }
 
 export class FiltrarCulturaDto {
