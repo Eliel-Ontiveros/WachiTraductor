@@ -1,100 +1,70 @@
-import { useState } from 'react';
-import { Alert, Keyboard } from 'react-native';
-import { traduccionService } from '@/services/traduccion.service';
-import { TraduccionRequest } from '@/services/traduccion.types';
+import { useState, useCallback } from 'react';
+import { traduccionService } from '../services/traduccion.service';
+import { TraduccionRequest, TraduccionResponse } from '../services/traduccion.types';
 
-export function useTranslation() {
-  const [inputText, setInputText] = useState('');
-  const [outputText, setOutputText] = useState('');
-  const [isTranslating, setIsTranslating] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState<'left' | 'right'>('left');
+export const useTranslation = () => {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const translate = async () => {
-    if (!inputText.trim()) {
-      Alert.alert('Sin texto', 'Escribe algo para traducir');
-      return;
-    }
-
-    // Cerrar el teclado antes de traducir
-    Keyboard.dismiss();
-
-    setIsTranslating(true);
-    setOutputText('Traduciendo...');
+  const traducir = useCallback(async (
+    texto: string,
+    direccion: 'español-triqui' | 'triqui-español'
+  ): Promise<TraduccionResponse | null> => {
+    setLoading(true);
+    setError(null);
 
     try {
-      // Determinar la dirección de traducción basada en el idioma seleccionado
-      const direccion = selectedLanguage === 'left' ? 'español-triqui' : 'triqui-español';
-
       const request: TraduccionRequest = {
-        texto: inputText.trim(),
-        direccion
+        texto,
+        direccion,
       };
 
-      const service = traduccionService;
-      const resultado = await service.traducir(request);
-
-      let textoCompleto = resultado.textoTraducido;
-
-      // Agregar alternativas si existen
-      if (resultado.alternativas && resultado.alternativas.length > 0) {
-        textoCompleto += `\n\nAlternativas: ${resultado.alternativas.join(', ')}`;
-      }
-
-      setOutputText(textoCompleto);
-    } catch (error) {
-      console.error('Error en traducción:', error);
-
-      // Intentar traducción local como respaldo
-      try {
-        const direccion = selectedLanguage === 'left' ? 'español-triqui' : 'triqui-español';
-        const service = traduccionService;
-        const resultadoLocal = await service.traducirLocal(inputText.trim(), direccion);
-        setOutputText(`${resultadoLocal.textoTraducido}\n\n(Traducción offline - ${resultadoLocal.notas})`);
-      } catch (localError) {
-        setOutputText('Error: No se pudo traducir el texto');
-        Alert.alert(
-          'Error de traducción',
-          error instanceof Error ? error.message : 'Error desconocido al traducir'
-        );
-      }
+      const resultado = await traduccionService.traducir(request);
+      return resultado;
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Error desconocido al traducir';
+      setError(errorMessage);
+      console.error('Error en traducción:', err);
+      return null;
     } finally {
-      setIsTranslating(false);
+      setLoading(false);
     }
-  };
+  }, []);
 
-  const clearTexts = () => {
-    setInputText('');
-    setOutputText('');
-  };
+  const traducirBatch = useCallback(async (
+    textos: string[],
+    direccion: 'español-triqui' | 'triqui-español'
+  ): Promise<string[]> => {
+    setLoading(true);
+    setError(null);
 
-  const clearInputText = () => {
-    setInputText('');
-    setOutputText(''); // También limpiamos la traducción cuando se limpia el input
-  };
-
-  const switchLanguages = () => {
-    const newLanguage = selectedLanguage === 'left' ? 'right' : 'left';
-    setSelectedLanguage(newLanguage);
-
-    // Intercambiar los textos si hay contenido
-    if (inputText || outputText) {
-      const tempText = inputText;
-      setInputText(outputText.split('\n')[0]); // Solo tomar la primera línea de la traducción
-      setOutputText('');
+    try {
+      const resultados = await traduccionService.traducirBatch(textos, direccion);
+      return resultados;
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Error desconocido en traducción batch';
+      setError(errorMessage);
+      console.error('Error en traducción batch:', err);
+      return [];
+    } finally {
+      setLoading(false);
     }
-  };
+  }, []);
+
+  const verificarServicio = useCallback(async (): Promise<boolean> => {
+    try {
+      return await traduccionService.verificarSalud();
+    } catch (err) {
+      console.error('Error al verificar servicio:', err);
+      return false;
+    }
+  }, []);
 
   return {
-    inputText,
-    outputText,
-    isTranslating,
-    selectedLanguage,
-    setInputText,
-    setOutputText,
-    setSelectedLanguage,
-    translate,
-    clearTexts,
-    clearInputText,
-    switchLanguages,
+    traducir,
+    traducirBatch,
+    verificarServicio,
+    loading,
+    error,
   };
-}
+};

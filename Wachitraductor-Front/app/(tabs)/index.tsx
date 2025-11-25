@@ -1,6 +1,6 @@
 import { Image } from 'expo-image';
 import { Platform, StatusBar, StyleSheet, View, TouchableOpacity, Animated, Text, Alert } from 'react-native';
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { HelloWave } from '@/components/hello-wave';
@@ -12,23 +12,45 @@ import LanguageToggle from '@/components/wachicomponentes/lenguaje';
 import TranslationCards from '@/components/wachicomponentes/translation-cards';
 import BottomNavBar from '@/components/wachicomponentes/bottom-nav';
 import { MaterialIcons } from '@expo/vector-icons';
-import { useTranslation, useClipboard } from '@/hooks';
+import { useTranslation } from '@/hooks/use-translation';
+import { useClipboard } from '@/hooks';
 
-export default function HomeScreen() {
-  const {
-    inputText,
-    outputText,
-    isTranslating,
-    selectedLanguage,
-    setInputText,
-    setSelectedLanguage,
-    translate,
-    switchLanguages,
-    clearInputText
-  } = useTranslation();
+export default function TraductorScreen() {
+  const { traducir, loading, error, verificarServicio } = useTranslation();
   const { copyToClipboard } = useClipboard();
+  const [textoEntrada, setTextoEntrada] = useState('');
+  const [textoSalida, setTextoSalida] = useState('');
+  const [direccion, setDireccion] = useState<'español-triqui' | 'triqui-español'>('español-triqui');
+  const [servicioActivo, setServicioActivo] = useState(true);
 
-  const handleCopy = () => copyToClipboard(outputText);
+  useEffect(() => {
+    // Verificar que el servicio esté activo al cargar
+    verificarServicio().then(setServicioActivo);
+  }, [verificarServicio]);
+
+  const handleTraducir = async () => {
+    if (!textoEntrada.trim()) {
+      return;
+    }
+
+    const resultado = await traducir(textoEntrada, direccion);
+    
+    if (resultado) {
+      setTextoSalida(resultado.textoTraducido);
+    }
+  };
+
+  const intercambiarIdiomas = () => {
+    setDireccion(prev => 
+      prev === 'español-triqui' ? 'triqui-español' : 'español-triqui'
+    );
+    // Intercambiar también los textos
+    const temp = textoEntrada;
+    setTextoEntrada(textoSalida);
+    setTextoSalida(temp);
+  };
+
+  const handleCopy = () => copyToClipboard(textoSalida);
 
   const handleTabPress = (tab: 'diccionario' | 'home' | 'cultura') => {
     if (tab === 'diccionario') {
@@ -44,20 +66,20 @@ export default function HomeScreen() {
         <Wachiheather />
         {/* Selector de idiomas personalizado (componente) */}
         <LanguageToggle
-          activeLanguage={selectedLanguage}
-          onChange={setSelectedLanguage}
+          activeLanguage={direccion === 'español-triqui' ? 'left' : 'right'}
+          onChange={(language) => setDireccion(language === 'left' ? 'español-triqui' : 'triqui-español')}
         />
         {/* Traductor */}
         <TranslationCards
-          leftTitle={selectedLanguage === 'left' ? 'Español' : 'Triqui'}
-          rightTitle={selectedLanguage === 'left' ? 'Triqui' : 'Español'}
-          leftText={inputText}
-          rightText={outputText || 'Esperando.....'}
-          onLeftTextChange={setInputText}
-          onTranslatePress={translate}
+          leftTitle={direccion === 'español-triqui' ? 'Español' : 'Triqui'}
+          rightTitle={direccion === 'español-triqui' ? 'Triqui' : 'Español'}
+          leftText={textoEntrada}
+          rightText={textoSalida || 'Esperando.....'}
+          onLeftTextChange={setTextoEntrada}
+          onTranslatePress={handleTraducir}
           onCopyPress={handleCopy}
-          onClearPress={clearInputText}
-          isTranslating={isTranslating}
+          onClearPress={() => { setTextoEntrada(''); setTextoSalida(''); }}
+          isTranslating={loading}
         />
         <BottomNavBar activeTab="home" onTabPress={handleTabPress} />
       </SafeAreaView>

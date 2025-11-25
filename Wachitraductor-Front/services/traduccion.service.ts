@@ -1,89 +1,76 @@
-import { TraduccionRequest, TraduccionResponse, EstadisticasTraduccion } from './traduccion.types';
+import { TraduccionRequest, TraduccionResponse } from './traduccion.types';
 
-// Configuración estática para evitar problemas de inicialización
-const BACKEND_URL = process.env.EXPO_PUBLIC_BACKEND_URL || 'http://192.168.1.69:3000';
+const TRANSLATE_API_URL = 'https://wachitraductor-v2-production.up.railway.app';
 
-class TraduccionService {
-    private get baseUrl() {
-        return `${BACKEND_URL}/traduccion`;
-    } async traducir(request: TraduccionRequest): Promise<TraduccionResponse> {
-        try {
-            const response = await fetch(this.baseUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(request),
-            });
+export const traduccionService = {
+  async traducir(request: TraduccionRequest): Promise<TraduccionResponse> {
+    try {
+      const response = await fetch(`${TRANSLATE_API_URL}/translate`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          text: request.texto 
+        }),
+      });
 
-            if (!response.ok) {
-                const errorData = await response.json().catch(() => ({ message: 'Error de conexión' }));
-                throw new Error(errorData.message || `Error ${response.status}: ${response.statusText}`);
-            }
+      if (!response.ok) {
+        throw new Error(`Error en la traducción: ${response.status}`);
+      }
 
-            const data: TraduccionResponse = await response.json();
-            return data;
-        } catch (error) {
-            console.error('Error en traducción:', error);
-            if (error instanceof Error) {
-                throw error;
-            }
-            throw new Error('Error desconocido al traducir');
-        }
+      const data = await response.json();
+      
+      // Mapear la respuesta del API al formato esperado
+      return {
+        textoOriginal: request.texto,
+        textoTraducido: data.translated_text,
+        direccion: request.direccion,
+        confianza: data.confidence || 0.95, // Valor por defecto si no viene
+        alternativas: data.alternatives || [],
+        notas: data.notes,
+      };
+    } catch (error) {
+      console.error('Error al traducir:', error);
+      throw error;
     }
+  },
 
-    async obtenerEstadisticas(): Promise<EstadisticasTraduccion> {
-        try {
-            const response = await fetch(`${BACKEND_URL}/traduccion/estadisticas`, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
+  async traducirBatch(textos: string[], direccion: 'español-triqui' | 'triqui-español'): Promise<string[]> {
+    try {
+      const response = await fetch(`${TRANSLATE_API_URL}/translate/batch`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          texts: textos 
+        }),
+      });
 
-            if (!response.ok) {
-                const errorData = await response.json().catch(() => ({ message: 'Error de conexión' }));
-                throw new Error(errorData.message || `Error ${response.status}: ${response.statusText}`);
-            }
+      if (!response.ok) {
+        throw new Error(`Error en la traducción batch: ${response.status}`);
+      }
 
-            const data: EstadisticasTraduccion = await response.json();
-            return data;
-        } catch (error) {
-            console.error('Error al obtener estadísticas:', error);
-            if (error instanceof Error) {
-                throw error;
-            }
-            throw new Error('Error desconocido al obtener estadísticas');
-        }
+      const data = await response.json();
+      return data.translated_texts || [];
+    } catch (error) {
+      console.error('Error al traducir batch:', error);
+      throw error;
     }
+  },
 
-    // Método de respaldo para traducción offline básica
-    async traducirLocal(texto: string, direccion: 'español-triqui' | 'triqui-español'): Promise<TraduccionResponse> {
-        // Simulación de traducción local básica
-        const traducciones: { [key: string]: string } = {
-            'agua': 'yaa',
-            'uno': "'ro' yo'o",
-            'dos': 'vij',
-            'tres': "va'nuj",
-            'yaa': 'agua',
-            "'ro' yo'o": 'uno',
-            'vij': 'dos',
-            "va'nuj": 'tres',
-        };
-
-        const textoNormalizado = texto.toLowerCase().trim();
-        const traduccion = traducciones[textoNormalizado];
-
-        return {
-            textoOriginal: texto,
-            textoTraducido: traduccion || 'Traducción no disponible',
-            direccion,
-            confianza: traduccion ? 90 : 0,
-            alternativas: [],
-            notas: traduccion ? 'Traducción local básica' : 'No se encontró traducción local'
-        };
+  async verificarSalud(): Promise<boolean> {
+    try {
+      const response = await fetch(`${TRANSLATE_API_URL}/health`);
+      return response.ok;
+    } catch (error) {
+      console.error('Error al verificar salud del servicio:', error);
+      return false;
     }
-}
+  },
 
-// Instancia única del servicio
-export const traduccionService = new TraduccionService();
+  obtenerDocumentacion(): string {
+    return `${TRANSLATE_API_URL}/docs`;
+  },
+};
