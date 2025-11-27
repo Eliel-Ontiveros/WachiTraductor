@@ -13,9 +13,15 @@ export const APP_CONFIG = {
 
 // Configuración de la API
 export const API_CONFIG = {
-    BASE_URL: APP_CONFIG.BACKEND_URL,
-    TIMEOUT: APP_CONFIG.REQUEST_TIMEOUT,
-};
+  TRANSLATE_URL: 'https://wachitraductor-v2-production.up.railway.app',
+  ENDPOINTS: {
+    TRANSLATE: '/translate',
+    TRANSLATE_BATCH: '/translate/batch',
+    HEALTH: '/health',
+    DOCS: '/docs',
+  },
+  TIMEOUT: 10000, // 10 segundos
+} as const;
 
 // URLs específicas de la API
 export const API_ENDPOINTS = {
